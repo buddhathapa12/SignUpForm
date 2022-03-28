@@ -222,4 +222,69 @@ body {
   width: 70px;
   padding-left: 43%;
 }
+
+.outerCont .DetailInfoCont {
+  margin-top: 100px;
+}
+
+.outerCont .DetailInfoCont .DefinitionCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 20px;
+  padding-right: 30px;
+}
+
+.outerCont .DetailInfoCont .DefinitionCont .ImageSectionCont {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: auto;
+  padding: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.outerCont .DetailInfoCont .DefinitionCont .ImageSectionCont .ImageSection {
+  width: 350px;
+}
+
+.outerCont .DetailInfoCont .DefinitionCont .TextInformation {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 70px;
+}
+
+.outerCont .DetailInfoCont .DefinitionCont .TextInformation .TitleSection {
+  font-size: 50px;
+  color: #848fa5;
+  font-family: AxiFormaLight;
+  margin-bottom: 30px;
+}
+
+.outerCont .DetailInfoCont .DefinitionCont .TextInformation .descriptionSection {
+  font-size: 23px;
+  color: #4d4d4d;
+  font-family: AxiFormaThin;
+  line-height: 2em;
+  font-weight: 700;
+}
 /*# sourceMappingURL=style.css.map */

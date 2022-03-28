@@ -97,7 +97,6 @@ body {
 
 .outerCont {
   width: 100%;
-  //   width: auto;
 
   .introSection {
     position: relative;
@@ -200,6 +199,47 @@ body {
         width: 70px;
         padding-left: 43%;
         // text-color: #000000;
+      }
+    }
+  }
+
+  .DetailInfoCont {
+    margin-top: 100px;
+    .DefinitionCont {
+      display: flex;
+      flex-direction: row;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-bottom: 20px;
+      padding-right: 30px;
+      .ImageSectionCont {
+        flex: 1;
+        margin: auto;
+        padding: 10px;
+        justify-content: center;
+        .ImageSection {
+          width: 350px;
+        }
+      }
+      .TextInformation {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 70px;
+        .TitleSection {
+          font-size: 50px;
+          color: #848fa5;
+          font-family: AxiFormaLight;
+          margin-bottom: 30px;
+        }
+        .descriptionSection {
+          font-size: 23px;
+          color: #4d4d4d;
+          font-family: AxiFormaThin;
+          line-height: 2em;
+          font-weight: 700;
+        }
       }
     }
   }
