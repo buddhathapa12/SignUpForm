@@ -287,4 +287,16 @@ body {
   line-height: 2em;
   font-weight: 700;
 }
+
+.outerCont .CarouselCont {
+  background-color: #363945;
+}
+
+.outerCont .CarouselCont .CarouselHeader {
+  text-align: center;
+  padding: 40px;
+  font-size: 30px;
+  color: #ffffff;
+  font-family: AxiFormaMedium;
+}
 /*# sourceMappingURL=style.css.map */
