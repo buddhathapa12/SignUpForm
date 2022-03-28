@@ -3,14 +3,107 @@
   margin: 0;
 }
 
+html {
+  width: 100vw;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: AxiFormaBlack;
+  src: url("../fonts/AXIFORMA-BLACK.OTF");
+}
+
+@font-face {
+  font-family: AxiFormaBlackItalic;
+  src: url("../fonts/AXIFORMA-BLACKITALIC.OTF");
+}
+@font-face {
+  font-family: AxiFormaBold;
+  src: url("../fonts/AXIFORMA-BOLD.OTF");
+}
+@font-face {
+  font-family: AxiFormaBoldItalic;
+  src: url("../fonts/AXIFORMA-BOLDITALIC.OTF");
+}
+
+@font-face {
+  font-family: AxiFormaBook;
+  src: url("../fonts/AXIFORMA-BOOK.OTF");
+}
+
+@font-face {
+  font-family: AxiFormaExtraBold;
+  src: url("../fonts/AXIFORMA-EXTRABOLD.OTF");
+}
+@font-face {
+  font-family: AxiFormaHeavy;
+  src: url("../fonts/AXIFORMA-HEAVY.OTF");
+}
+@font-face {
+  font-family: AxiFormaHeavyItalic;
+  src: url("../fonts/AXIFORMA-HEAVYITALIC.OTF");
+}
+
+@font-face {
+  font-family: AxiFormaItalic;
+  src: url("../fonts/AXIFORMA-ITALIC.OTF");
+}
+
+@font-face {
+  font-family: AxiFormaLight;
+  src: url("../fonts/AxiForma-Light.OTF");
+}
+
+@font-face {
+  font-family: AxiFormaLightItalic;
+  src: url("../fonts/AXIFORMA-LIGHTITALIC.OTF");
+}
+
+@font-face {
+  font-family: AxiFormaMedium;
+  src: url("../fonts/AxiForma-Medium.OTF");
+}
+
+@font-face {
+  font-family: AxiFormaMediumItalic;
+  src: url("../fonts/AXIFORMA-MEDIUMITALIC.OTF");
+}
+
+@font-face {
+  font-family: AxiFormaRegular;
+  src: url("../fonts/AXIFORMA-REGULAR.OTF");
+}
+@font-face {
+  font-family: AxiFormaSemiBold;
+  src: url("../fonts/AXIFORMA-SEMIBOLD.OTF");
+}
+
+@font-face {
+  font-family: AxiFormaSemiBoldItalic;
+  src: url("../fonts/AXIFORMA-SEMIBOLDITALIC.OTF");
+}
+@font-face {
+  font-family: AxiFormaThin;
+  src: url("../fonts/AXIFORMA-THIN.OTF");
+}
+@font-face {
+  font-family: AxiFormaThinItalic;
+  src: url("../fonts/AXIFORMA-THINITALIC.OTF");
+}
+
 .outerCont {
+  width: 100%;
   //   width: auto;
 
   .introSection {
-    // height: 100vh;
-    // width: 100vw;
+    position: relative;
+    width: 100%;
+    height: 100vh;
     .myVideo {
-      position: absolute;
       right: 0;
       bottom: 0;
       min-width: 100%;
@@ -20,12 +113,93 @@
       z-index: -100;
       object-fit: cover;
     }
-    .TulipLogoCont {
-      padding-left: 50px;
-      padding-top: 40px;
+
+    .TulipCont {
+      position: absolute;
+      top: 0;
+      padding-left: 3%;
+      padding-top: 3%;
+      //   padding-left: 50px;
+      //   padding-top: 40px;
       .TulipLogo {
-        width: auto;
-        max-width: 150px;
+        // max-width: 150px;
+        width: 50%;
+        // text-color: #000000;
+      }
+    }
+
+    .ContactSection {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding-right: 3%;
+      padding-top: 3%;
+      .Contact {
+        border-style: solid;
+        border-width: 1px;
+        border-color: #26937a;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 15px;
+        padding-right: 17px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        .mailLogo {
+          width: 25px;
+          fill: #8dbaac;
+        }
+        .Content {
+          padding-left: 15px;
+          color: #ffffff;
+          text-align: center;
+          font-size: 20px;
+          font-weight: 100;
+          font-family: AxiFormaBook;
+        }
+      }
+    }
+
+    .IntroTextCont {
+      position: absolute;
+      top: 50%;
+      left: 12.5%;
+      right: 12.5%;
+      align-items: center;
+      .IntroTitleText {
+        text-align: center;
+        font-size: 45px;
+        font-weight: 800;
+        font-family: AxiFormaBold;
+        color: #ffffff;
+      }
+      .IntroDescription {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 400;
+        font-family: AxiFormaBook;
+        color: #ffffff;
+        padding-left: 22%;
+        padding-right: 20%;
+      }
+    }
+
+    .ArrowDownButtonCont {
+      position: absolute;
+      bottom: 10%;
+      left: 12.5%;
+      right: 12.5%;
+      padding-left: 3%;
+      padding-top: 3%;
+      align-items: center;
+      //   padding-left: 50px;
+      //   padding-top: 40px;
+      .ArrowDownButton {
+        // max-width: 150px;
+        width: 70px;
+        padding-left: 43%;
+        // text-color: #000000;
       }
     }
   }

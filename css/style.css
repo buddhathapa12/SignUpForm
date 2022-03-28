@@ -3,8 +3,116 @@
   margin: 0;
 }
 
+html {
+  width: 100vw;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: AxiFormaBlack;
+  src: url("../fonts/AXIFORMA-BLACK.OTF");
+}
+
+@font-face {
+  font-family: AxiFormaBlackItalic;
+  src: url("../fonts/AXIFORMA-BLACKITALIC.OTF");
+}
+
+@font-face {
+  font-family: AxiFormaBold;
+  src: url("../fonts/AXIFORMA-BOLD.OTF");
+}
+
+@font-face {
+  font-family: AxiFormaBoldItalic;
+  src: url("../fonts/AXIFORMA-BOLDITALIC.OTF");
+}
+
+@font-face {
+  font-family: AxiFormaBook;
+  src: url("../fonts/AXIFORMA-BOOK.OTF");
+}
+
+@font-face {
+  font-family: AxiFormaExtraBold;
+  src: url("../fonts/AXIFORMA-EXTRABOLD.OTF");
+}
+
+@font-face {
+  font-family: AxiFormaHeavy;
+  src: url("../fonts/AXIFORMA-HEAVY.OTF");
+}
+
+@font-face {
+  font-family: AxiFormaHeavyItalic;
+  src: url("../fonts/AXIFORMA-HEAVYITALIC.OTF");
+}
+
+@font-face {
+  font-family: AxiFormaItalic;
+  src: url("../fonts/AXIFORMA-ITALIC.OTF");
+}
+
+@font-face {
+  font-family: AxiFormaLight;
+  src: url("../fonts/AxiForma-Light.OTF");
+}
+
+@font-face {
+  font-family: AxiFormaLightItalic;
+  src: url("../fonts/AXIFORMA-LIGHTITALIC.OTF");
+}
+
+@font-face {
+  font-family: AxiFormaMedium;
+  src: url("../fonts/AxiForma-Medium.OTF");
+}
+
+@font-face {
+  font-family: AxiFormaMediumItalic;
+  src: url("../fonts/AXIFORMA-MEDIUMITALIC.OTF");
+}
+
+@font-face {
+  font-family: AxiFormaRegular;
+  src: url("../fonts/AXIFORMA-REGULAR.OTF");
+}
+
+@font-face {
+  font-family: AxiFormaSemiBold;
+  src: url("../fonts/AXIFORMA-SEMIBOLD.OTF");
+}
+
+@font-face {
+  font-family: AxiFormaSemiBoldItalic;
+  src: url("../fonts/AXIFORMA-SEMIBOLDITALIC.OTF");
+}
+
+@font-face {
+  font-family: AxiFormaThin;
+  src: url("../fonts/AXIFORMA-THIN.OTF");
+}
+
+@font-face {
+  font-family: AxiFormaThinItalic;
+  src: url("../fonts/AXIFORMA-THINITALIC.OTF");
+}
+
+.outerCont {
+  width: 100%;
+}
+
+.outerCont .introSection {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
 .outerCont .introSection .myVideo {
-  position: absolute;
   right: 0;
   bottom: 0;
   min-width: 100%;
@@ -16,13 +124,102 @@
      object-fit: cover;
 }
 
-.outerCont .introSection .TulipLogoCont {
-  padding-left: 50px;
-  padding-top: 40px;
+.outerCont .introSection .TulipCont {
+  position: absolute;
+  top: 0;
+  padding-left: 3%;
+  padding-top: 3%;
 }
 
-.outerCont .introSection .TulipLogoCont .TulipLogo {
-  width: auto;
-  max-width: 150px;
+.outerCont .introSection .TulipCont .TulipLogo {
+  width: 50%;
+}
+
+.outerCont .introSection .ContactSection {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right: 3%;
+  padding-top: 3%;
+}
+
+.outerCont .introSection .ContactSection .Contact {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #26937a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 15px;
+  padding-right: 17px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.outerCont .introSection .ContactSection .Contact .mailLogo {
+  width: 25px;
+  fill: #8dbaac;
+}
+
+.outerCont .introSection .ContactSection .Contact .Content {
+  padding-left: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 100;
+  font-family: AxiFormaBook;
+}
+
+.outerCont .introSection .IntroTextCont {
+  position: absolute;
+  top: 50%;
+  left: 12.5%;
+  right: 12.5%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.outerCont .introSection .IntroTextCont .IntroTitleText {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 800;
+  font-family: AxiFormaBold;
+  color: #ffffff;
+}
+
+.outerCont .introSection .IntroTextCont .IntroDescription {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;
+  font-family: AxiFormaBook;
+  color: #ffffff;
+  padding-left: 22%;
+  padding-right: 20%;
+}
+
+.outerCont .introSection .ArrowDownButtonCont {
+  position: absolute;
+  bottom: 10%;
+  left: 12.5%;
+  right: 12.5%;
+  padding-left: 3%;
+  padding-top: 3%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.outerCont .introSection .ArrowDownButtonCont .ArrowDownButton {
+  width: 70px;
+  padding-left: 43%;
 }
 /*# sourceMappingURL=style.css.map */
