@@ -303,4 +303,28 @@ body {
       //   }
     }
   }
+
+  .FooterCont {
+    margin: 50px;
+    .FooterHorizontalLine {
+      border: 1px solid #0eeae6;
+      width: 100vw;
+    }
+    .Footer {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: row;
+      .Copyright {
+        flex: 1;
+      }
+      .footer-contact {
+        flex: 1;
+        text-align: right;
+
+        .footer-color {
+          color: #000000;
+        }
+      }
+    }
+  }
 }

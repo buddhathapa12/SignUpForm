@@ -354,4 +354,41 @@ body {
 .outerCont .SignUpCont .RequirementCont .RequirementSubCont .RequirementsList .RequirementItem ::before {
   content: "\2714\0020";
 }
+
+.outerCont .FooterCont {
+  margin: 50px;
+}
+
+.outerCont .FooterCont .FooterHorizontalLine {
+  border: 1px solid #0eeae6;
+  width: 100vw;
+}
+
+.outerCont .FooterCont .Footer {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.outerCont .FooterCont .Footer .Copyright {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.outerCont .FooterCont .Footer .footer-contact {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: right;
+}
+
+.outerCont .FooterCont .Footer .footer-contact .footer-color {
+  color: #000000;
+}
 /*# sourceMappingURL=style.css.map */
