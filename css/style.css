@@ -253,7 +253,7 @@ body {
 }
 
 .outerCont .DetailInfoCont .DefinitionCont .ImageSectionCont .ImageSection {
-  width: 350px;
+  width: 500px;
 }
 
 .outerCont .DetailInfoCont .DefinitionCont .TextInformation {
@@ -289,14 +289,69 @@ body {
 }
 
 .outerCont .CarouselCont {
+  padding: 40px;
   background-color: #363945;
 }
 
 .outerCont .CarouselCont .CarouselHeader {
   text-align: center;
-  padding: 40px;
   font-size: 30px;
   color: #ffffff;
   font-family: AxiFormaMedium;
+}
+
+.outerCont .SignUpCont {
+  padding: 40px;
+}
+
+.outerCont .SignUpCont .GetStarted {
+  text-align: center;
+  font-size: 30px;
+  font-family: AxiFormaMedium;
+  color: #848fa5;
+}
+
+.outerCont .SignUpCont .FormFillRequest {
+  text-align: center;
+  font-family: AxiFormaBook;
+  color: #585858;
+}
+
+.outerCont .SignUpCont .RequirementCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 40px;
+  margin-left: 25%;
+  margin-right: 25%;
+  border: solid;
+  border-color: #0debe8;
+  border-width: 2px;
+}
+
+.outerCont .SignUpCont .RequirementCont .RequirementSubCont {
+  margin: 30px 60px 20px 100px;
+}
+
+.outerCont .SignUpCont .RequirementCont .RequirementSubCont .RequirementHeader {
+  font-family: AxiFormaBold;
+  margin-bottom: 20px;
+}
+
+.outerCont .SignUpCont .RequirementCont .RequirementSubCont .RequirementsList {
+  list-style: none;
+}
+
+.outerCont .SignUpCont .RequirementCont .RequirementSubCont .RequirementsList .RequirementItem {
+  margin-bottom: 20px;
+  font-family: AxiFormaLight;
+}
+
+.outerCont .SignUpCont .RequirementCont .RequirementSubCont .RequirementsList .RequirementItem ::before {
+  content: "\2714\0020";
 }
 /*# sourceMappingURL=style.css.map */

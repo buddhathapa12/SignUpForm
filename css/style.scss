@@ -217,7 +217,7 @@ body {
         padding: 10px;
         justify-content: center;
         .ImageSection {
-          width: 350px;
+          width: 500px;
         }
       }
       .TextInformation {
@@ -244,13 +244,63 @@ body {
   }
 
   .CarouselCont {
+    padding: 40px;
     background-color: #363945;
     .CarouselHeader {
       text-align: center;
-      padding: 40px;
       font-size: 30px;
       color: #ffffff;
       font-family: AxiFormaMedium;
+    }
+  }
+
+  .SignUpCont {
+    padding: 40px;
+    .GetStarted {
+      text-align: center;
+      font-size: 30px;
+      font-family: AxiFormaMedium;
+      color: #848fa5;
+    }
+
+    .FormFillRequest {
+      text-align: center;
+      font-family: AxiFormaBook;
+      color: #585858;
+    }
+
+    .RequirementCont {
+      display: flex;
+      flex-direction: column;
+      margin-top: 40px;
+      margin-left: 25%;
+      margin-right: 25%;
+      border: solid;
+      border-color: #0debe8;
+      border-width: 2px;
+
+      .RequirementSubCont {
+        margin: 30px 60px 20px 100px;
+
+        .RequirementHeader {
+          font-family: AxiFormaBold;
+          margin-bottom: 20px;
+        }
+
+        .RequirementsList {
+          list-style: none;
+          .RequirementItem {
+            margin-bottom: 20px;
+            font-family: AxiFormaLight;
+            ::before {
+              content: "\2714\0020";
+            }
+          }
+        }
+      }
+      //   .RequirementHeader {
+      //     margin-top: 40px;
+      //   }
     }
   }
 }
