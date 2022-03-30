@@ -164,7 +164,47 @@
         </div>
         <div class="SignUpFormCont">
           <form action="#">
-            <label>FIRST NAME</label>
+            <div class="NameSection">
+              <div class="UserName">
+                <label>FIRST NAME</label>
+                <input type="text" />
+              </div>
+              <div class="UserName">
+                <label>Last NAME</label>
+                <input type="text" />
+              </div>
+              <div class="SuffixSelector">
+                <label for="Suffix">SUFFIX</label>
+                <select id="suffix" name="suffix">
+                  <option value="MD">MD</option>
+                  <option value="ND">ND</option>
+                  <option value="DO">DO</option>
+                  <option value="NP">NP</option>
+                  <option value="PA">PA</option>
+                </select>
+              </div>
+            </div>
+            <div class="CredentialsSection">
+              <label for="credentials">CREDENTIALS</label>
+              <input id="credentials" maxlength="250" />
+            </div>
+            <div class="FormContactSection">
+              <div class="PhoneNumber">
+                <label for="phoneNumber">PHONE NUMBER</label>
+                <input
+                  type="tel"
+                  id="phoneNumber"
+                  name="phoneNumber"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  required
+                  maxlength="10"
+                />
+              </div>
+              <div class="EmailAddress">
+                <label for="Email">EMAIL</label>
+                <input type="email" id="email" name="email" />
+              </div>
+            </div>
           </form>
         </div>
       </div>
