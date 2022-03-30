@@ -306,9 +306,11 @@ body {
 
 .outerCont .SignUpCont .GetStarted {
   text-align: center;
-  font-size: 30px;
+  font-size: 35px;
   font-family: AxiFormaMedium;
   color: #848fa5;
+  margin-bottom: 20px;
+  font-weight: 800;
 }
 
 .outerCont .SignUpCont .FormFillRequest {
@@ -340,6 +342,7 @@ body {
 .outerCont .SignUpCont .RequirementCont .RequirementSubCont .RequirementHeader {
   font-family: AxiFormaBold;
   margin-bottom: 20px;
+  color: #555555;
 }
 
 .outerCont .SignUpCont .RequirementCont .RequirementSubCont .RequirementsList {
