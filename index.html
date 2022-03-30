@@ -176,6 +176,9 @@
               <div class="SuffixSelector">
                 <label for="Suffix">SUFFIX</label>
                 <select id="suffix" name="suffix">
+                  <option value="none" selected disabled hidden>
+                    SELECT ...
+                  </option>
                   <option value="MD">MD</option>
                   <option value="ND">ND</option>
                   <option value="DO">DO</option>
@@ -205,21 +208,131 @@
                 <input type="email" id="email" name="email" />
               </div>
             </div>
+            <div class="States">
+              <label for="state"
+                >STATE(s) WHERE YOU CAN PRACTICE TELEMEDICINE:
+              </label>
+              <select id="state" name="state">
+                <option value="none" selected disabled hidden>
+                  SELECT ...
+                </option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="DC">District Of Columbia</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VT">Vermont</option>
+                <option value="VA">Virginia</option>
+                <option value="WA">Washington</option>
+                <option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WY">Wyoming</option>
+              </select>
+            </div>
+            <div class="AreaOfFocusCont">
+              <label for="areaOfFocus">AREA OF FOCUS</label>
+              <input id="credentials" maxlength="250" />
+            </div>
+            <div class="HoursPatientReferredCont">
+              <label for="hourReferred"
+                >How many hours can you see patients referred from tulip in a
+                typical week?</label
+              >
+              <select name="hourReferred" id="hourReferred">
+                <option value="aa">aa</option>
+              </select>
+            </div>
+            <div class="TypicalResponseTime">
+              <label for="typicalResponseTime"
+                >What is your typical response time to new patient
+                inquiries?</label
+              >
+              <select name="typicalResponseTime" id="typicalResponseTime">
+                <option value="less than 1 hr">less than 1 hr</option>
+                <option value="1 hr">1 hr</option>
+                <option value="2 hr">2 hr</option>
+                <option value="4 hr">4 hr</option>
+                <option value="1 day">1 day</option>
+                <option value="2 days">2 days</option>
+                <option value="3 days">3 days</option>
+                <option value="Longer than 3 days">Longer than 3 days</option>
+              </select>
+            </div>
+            <div class="WaitTimeForPatient">
+              <label for="WaitTimeForPatient"
+                >How long do patients usually have to wait before there is an
+                opening for a first appointment?</label
+              >
+              <select name="WaitTimeForPatient" id="WaitTimeForPatient">
+                <option value="less than 1 hr">less than 1 hr</option>
+                <option value="1 hr">1 hr</option>
+                <option value="2 hr">2 hr</option>
+                <option value="4 hr">4 hr</option>
+                <option value="1 day">1 day</option>
+                <option value="2 days">2 days</option>
+                <option value="3 days">3 days</option>
+                <option value="Longer than 3 days">Longer than 3 days</option>
+              </select>
+            </div>
+            <div class="FeedbackToTulip">
+              <label for="feedBackToTulip"
+                >Anything else you want us to know?</label
+              >
+              <input type="text" />
+            </div>
           </form>
         </div>
       </div>
 
       <div class="FooterCont">
-        <div class="FooterHorizontalLine">
-          <hr />
-        </div>
+        <div class="FooterHorizontalLine"></div>
 
         <div class="Footer">
           <div class="Copyright">
             &copy;2022 TULIP HEALTH LLC ~ ALL rights reserved.
           </div>
-          <div class="footer-contact">
-            <a href="#" class="footer-color">CONTACT US</a>
+          <div class="FooterContact">
+            <a href="#" class="FooterColor">CONTACT US</a>
           </div>
         </div>
       </div>

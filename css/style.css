@@ -362,6 +362,7 @@ body {
 .outerCont .FooterCont .FooterHorizontalLine {
   border: 1px solid #0eeae6;
   width: 100vw;
+  background-color: #0eeae6;
 }
 
 .outerCont .FooterCont .Footer {
@@ -381,14 +382,14 @@ body {
           flex: 1;
 }
 
-.outerCont .FooterCont .Footer .footer-contact {
+.outerCont .FooterCont .Footer .FooterContact {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   text-align: right;
 }
 
-.outerCont .FooterCont .Footer .footer-contact .footer-color {
+.outerCont .FooterCont .Footer .FooterContact .FooterColor {
   color: #000000;
 }
 /*# sourceMappingURL=style.css.map */

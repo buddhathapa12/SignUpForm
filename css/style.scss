@@ -309,6 +309,7 @@ body {
     .FooterHorizontalLine {
       border: 1px solid #0eeae6;
       width: 100vw;
+      background-color: #0eeae6;
     }
     .Footer {
       margin-top: 20px;
@@ -317,11 +318,11 @@ body {
       .Copyright {
         flex: 1;
       }
-      .footer-contact {
+      .FooterContact {
         flex: 1;
         text-align: right;
 
-        .footer-color {
+        .FooterColor {
           color: #000000;
         }
       }
