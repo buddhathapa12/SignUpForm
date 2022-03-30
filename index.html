@@ -170,19 +170,29 @@
           </div>
         </div>
         <div class="SignUpFormCont">
-          <form action="#">
+          <form action="#" name="signUpForm">
             <div class="NameSection">
               <div class="UserName">
                 <label>FIRST NAME</label>
-                <input type="text" />
+                <input
+                  type="text"
+                  name="firstName"
+                  onblur="ValidateFirstName()"
+                />
+                <div class="error" id="firstNameErr"></div>
               </div>
               <div class="UserName">
                 <label>LAST NAME</label>
-                <input type="text" />
+                <input
+                  type="text"
+                  name="lastName"
+                  onblur="ValidateLastName()"
+                />
+                <div class="error" id="lastNameErr"></div>
               </div>
               <div class="SuffixSelector">
                 <label for="Suffix">SUFFIX</label>
-                <select id="suffix" name="suffix">
+                <select id="suffix" name="suffix" onblur="ValidateSuffix()">
                   <option value="none" selected disabled hidden>
                     SELECT ...
                   </option>
@@ -192,11 +202,18 @@
                   <option value="NP">NP</option>
                   <option value="PA">PA</option>
                 </select>
+                <div class="error" id="suffixError"></div>
               </div>
             </div>
             <div class="CredentialsSection">
               <label for="credentials">CREDENTIALS</label>
-              <input id="credentials" maxlength="250" />
+              <input
+                id="credentials"
+                maxlength="250"
+                name="credentials"
+                onblur="ValidateCredentials()"
+              />
+              <div class="error" id="credentialsError"></div>
             </div>
             <div class="FormContactSection">
               <div class="PhoneNumber">
@@ -208,7 +225,9 @@
                   pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                   required
                   maxlength="10"
+                  onblur="ValidatePhoneNumber()"
                 />
+                <div class="error" id="phoneNumberError"></div>
               </div>
               <div class="EmailAddress">
                 <label for="Email">EMAIL</label>
@@ -219,7 +238,7 @@
               <label for="state"
                 >STATE(s) WHERE YOU CAN PRACTICE TELEMEDICINE:
               </label>
-              <select id="state" name="state">
+              <select id="state" name="state" onblur="ValidateState()">
                 <option value="none" selected disabled hidden>
                   SELECT ...
                 </option>
@@ -275,29 +294,45 @@
                 <option value="WI">Wisconsin</option>
                 <option value="WY">Wyoming</option>
               </select>
+              <div class="error" id="stateError"></div>
             </div>
             <div class="AreaOfFocusCont">
               <label for="areaOfFocus">AREA OF FOCUS</label>
-              <input id="credentials" maxlength="250" />
+              <input
+                id="areaOfFocus"
+                maxlength="250"
+                name="areaOfFocus"
+                onblur="ValidateAreaOfFocus()"
+              />
+              <div class="error" id="areaOfFocusError"></div>
             </div>
             <div class="HoursPatientReferredCont">
               <label for="hourReferred"
                 >How many hours can you see patients referred from tulip in a
                 typical week?</label
               >
-              <select name="hourReferred" id="hourReferred">
+              <select
+                name="hourReferred"
+                id="hourReferred"
+                onblur="ValidateHourReferred()"
+              >
                 <option value="none" selected disabled hidden>
                   SELECT ...
                 </option>
                 <option value="aa">aa</option>
               </select>
+              <div class="error" id="hourReferredError"></div>
             </div>
             <div class="TypicalResponseTime">
               <label for="typicalResponseTime"
                 >What is your typical response time to new patient
                 inquiries?</label
               >
-              <select name="typicalResponseTime" id="typicalResponseTime">
+              <select
+                name="typicalResponseTime"
+                id="typicalResponseTime"
+                onblur="ValidateTypicalResponseTime()"
+              >
                 <option value="none" selected disabled hidden>
                   SELECT ...
                 </option>
@@ -310,13 +345,18 @@
                 <option value="3 days">3 days</option>
                 <option value="Longer than 3 days">Longer than 3 days</option>
               </select>
+              <div class="error" id="typicalResponseTimeError"></div>
             </div>
             <div class="WaitTimeForPatient">
               <label for="WaitTimeForPatient"
                 >How long do patients usually have to wait before there is an
                 opening for a first appointment?</label
               >
-              <select name="WaitTimeForPatient" id="WaitTimeForPatient">
+              <select
+                name="waitTimeForPatient"
+                id="waitTimeForPatient"
+                onblur="ValidateWaitTimeForPatient()"
+              >
                 <option value="none" selected disabled hidden>
                   SELECT ...
                 </option>
@@ -329,6 +369,7 @@
                 <option value="3 days">3 days</option>
                 <option value="Longer than 3 days">Longer than 3 days</option>
               </select>
+              <div class="error" id="waitTimeForPatientError"></div>
             </div>
             <div class="FeedbackToTulip">
               <label for="feedBackToTulip"
