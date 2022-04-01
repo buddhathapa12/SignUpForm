@@ -147,6 +147,7 @@ body {
   border-style: solid;
   border-width: 1px;
   border-color: #26937a;
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -426,9 +427,18 @@ body {
 
 .outerCont .SignUpCont .SignUpFormCont .NameSection .SuffixSelector .SuffixInput {
   height: 40px;
-  width: 200px;
+  width: 180px;
   font-family: AxiformaLightItalic;
   font-size: 20px;
+  background-image: url(/svgs/triangle-down.svg);
+  background-position: right;
+  background-size: 15px;
+  background-repeat: no-repeat;
+  padding-left: 10px;
+  padding-right: 10px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .CredentialsSection {
@@ -445,24 +455,28 @@ body {
 .outerCont .SignUpCont .SignUpFormCont .CredentialsSection .CredentialsInputBox {
   padding: 10px;
   height: 90px;
-  font-family: AxiformaLightItalic;
+  font-family: AxiformaLight;
   font-size: 20px;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .CredentialsSection ::-webkit-input-placeholder {
   opacity: 0.5;
+  font-family: AxiformaLightItalic;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .CredentialsSection :-ms-input-placeholder {
   opacity: 0.5;
+  font-family: AxiformaLightItalic;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .CredentialsSection ::-ms-input-placeholder {
   opacity: 0.5;
+  font-family: AxiformaLightItalic;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .CredentialsSection ::placeholder {
   opacity: 0.5;
+  font-family: AxiformaLightItalic;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .FormContactSection {
@@ -530,6 +544,15 @@ body {
   width: 200px;
   font-family: AxiformaLightItalic;
   font-size: 20px;
+  background-image: url(/svgs/triangle-down.svg);
+  background-position: right;
+  background-size: 15px;
+  background-repeat: no-repeat;
+  padding-left: 10px;
+  padding-right: 10px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .AreaOfFocusCont {
@@ -546,24 +569,28 @@ body {
 .outerCont .SignUpCont .SignUpFormCont .AreaOfFocusCont .AreaOfFocusInput {
   padding: 10px;
   height: 90px;
-  font-family: AxiformaLightItalic;
+  font-family: AxiformaLight;
   font-size: 20px;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .AreaOfFocusCont ::-webkit-input-placeholder {
   opacity: 0.5;
+  font-family: AxiformaLightItalic;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .AreaOfFocusCont :-ms-input-placeholder {
   opacity: 0.5;
+  font-family: AxiformaLightItalic;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .AreaOfFocusCont ::-ms-input-placeholder {
   opacity: 0.5;
+  font-family: AxiformaLightItalic;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .AreaOfFocusCont ::placeholder {
   opacity: 0.5;
+  font-family: AxiformaLightItalic;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .HoursPatientReferredCont {
@@ -582,6 +609,15 @@ body {
   width: 400px;
   font-family: AxiformaLightItalic;
   font-size: 20px;
+  background-image: url(/svgs/triangle-down.svg);
+  background-position: right;
+  background-size: 15px;
+  background-repeat: no-repeat;
+  padding-left: 10px;
+  padding-right: 10px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .TypicalResponseTime {
@@ -600,6 +636,15 @@ body {
   width: 400px;
   font-family: AxiformaLightItalic;
   font-size: 20px;
+  background-image: url(/svgs/triangle-down.svg);
+  background-position: right;
+  background-size: 15px;
+  background-repeat: no-repeat;
+  padding-left: 10px;
+  padding-right: 10px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .WaitTimeForPatient {
@@ -618,6 +663,15 @@ body {
   width: 400px;
   font-family: AxiformaLightItalic;
   font-size: 20px;
+  background-image: url(/svgs/triangle-down.svg);
+  background-position: right;
+  background-size: 15px;
+  background-repeat: no-repeat;
+  padding-left: 10px;
+  padding-right: 10px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .FeedbackToTulip {
@@ -633,24 +687,64 @@ body {
 .outerCont .SignUpCont .SignUpFormCont .FeedbackToTulip .FeedbackToTulipInput {
   padding: 10px;
   height: 90px;
-  font-family: AxiformaLightItalic;
+  font-family: AxiformaLight;
   font-size: 20px;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .FeedbackToTulip ::-webkit-input-placeholder {
   opacity: 0.5;
+  font-family: AxiformaLightItalic;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .FeedbackToTulip :-ms-input-placeholder {
   opacity: 0.5;
+  font-family: AxiformaLightItalic;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .FeedbackToTulip ::-ms-input-placeholder {
   opacity: 0.5;
+  font-family: AxiformaLightItalic;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .FeedbackToTulip ::placeholder {
   opacity: 0.5;
+  font-family: AxiformaLightItalic;
+}
+
+.outerCont .SignUpCont .SignUpFormCont .SubmitCont {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  cursor: pointer;
+  width: 120px;
+  height: 30px;
+  padding: 10px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#0cebeb), to(#29fec6));
+  background-image: linear-gradient(to right, #0cebeb, #29fec6);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.outerCont .SignUpCont .SignUpFormCont .SubmitCont .SubmitText {
+  padding-top: 5px;
+  text-align: center;
+  font-family: AxiFormaBold;
+}
+
+.outerCont .SignUpCont .SignUpFormCont .SubmitCont .SubmitIcon {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  width: 20px;
+}
+
+.outerCont .SignUpCont .SignUpFormCont .SubmitCont :hover {
+  width: 100px;
 }
 
 .outerCont .FooterCont {

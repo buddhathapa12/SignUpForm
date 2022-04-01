@@ -77,6 +77,7 @@ function ValidatePhoneNumber() {
     }
   }
 }
+
 function ValidateEmailAddress() {
   let emailAddress = document.signUpForm.email.value;
   let emailaddrError = true;

@@ -136,6 +136,7 @@ body {
         border-style: solid;
         border-width: 1px;
         border-color: #26937a;
+        cursor: pointer;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -340,9 +341,18 @@ body {
           flex-direction: column;
           .SuffixInput {
             height: 40px;
-            width: 200px;
+            width: 180px;
             font-family: AxiformaLightItalic;
             font-size: 20px;
+            background-image: url(/svgs/triangle-down.svg);
+            background-position: right; //140px;;
+            background-size: 15px;
+            background-repeat: no-repeat;
+            padding-left: 10px;
+            padding-right: 10px;
+            appearance: none;
+            // background-color: #ffffff;
+            // padding-right: 15px;
           }
         }
       }
@@ -354,11 +364,12 @@ body {
         .CredentialsInputBox {
           padding: 10px;
           height: 90px;
-          font-family: AxiformaLightItalic;
+          font-family: AxiformaLight;
           font-size: 20px;
         }
         ::placeholder {
           opacity: 0.5;
+          font-family: AxiformaLightItalic;
         }
       }
 
@@ -396,6 +407,13 @@ body {
           width: 200px;
           font-family: AxiformaLightItalic;
           font-size: 20px;
+          background-image: url(/svgs/triangle-down.svg);
+          background-position: right; //140px;;
+          background-size: 15px;
+          background-repeat: no-repeat;
+          padding-left: 10px;
+          padding-right: 10px;
+          appearance: none;
         }
       }
 
@@ -406,11 +424,12 @@ body {
         .AreaOfFocusInput {
           padding: 10px;
           height: 90px;
-          font-family: AxiformaLightItalic;
+          font-family: AxiformaLight;
           font-size: 20px;
         }
         ::placeholder {
           opacity: 0.5;
+          font-family: AxiformaLightItalic;
         }
       }
 
@@ -423,6 +442,13 @@ body {
           width: 400px;
           font-family: AxiformaLightItalic;
           font-size: 20px;
+          background-image: url(/svgs/triangle-down.svg);
+          background-position: right; //140px;;
+          background-size: 15px;
+          background-repeat: no-repeat;
+          padding-left: 10px;
+          padding-right: 10px;
+          appearance: none;
         }
       }
 
@@ -435,6 +461,13 @@ body {
           width: 400px;
           font-family: AxiformaLightItalic;
           font-size: 20px;
+          background-image: url(/svgs/triangle-down.svg);
+          background-position: right; //140px;;
+          background-size: 15px;
+          background-repeat: no-repeat;
+          padding-left: 10px;
+          padding-right: 10px;
+          appearance: none;
         }
       }
 
@@ -447,6 +480,13 @@ body {
           width: 400px;
           font-family: AxiformaLightItalic;
           font-size: 20px;
+          background-image: url(/svgs/triangle-down.svg);
+          background-position: right; //140px;;
+          background-size: 15px;
+          background-repeat: no-repeat;
+          padding-left: 10px;
+          padding-right: 10px;
+          appearance: none;
         }
       }
 
@@ -456,11 +496,38 @@ body {
         .FeedbackToTulipInput {
           padding: 10px;
           height: 90px;
-          font-family: AxiformaLightItalic;
+          font-family: AxiformaLight;
           font-size: 20px;
         }
         ::placeholder {
           opacity: 0.5;
+          font-family: AxiformaLightItalic;
+        }
+      }
+
+      .SubmitCont {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        cursor: pointer;
+        width: 120px;
+        height: 30px;
+        padding: 10px;
+        background-image: linear-gradient(to right, #0cebeb, #29fec6);
+        justify-content: space-between;
+        .SubmitText {
+          padding-top: 5px;
+          text-align: center;
+          font-family: AxiFormaBold;
+        }
+        .SubmitIcon {
+          // transform: scale(0.8);
+          transform: rotate(-90deg);
+          width: 20px;
+        }
+
+        :hover {
+          width: 100px;
         }
       }
     }
