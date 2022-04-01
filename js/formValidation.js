@@ -20,6 +20,8 @@ function ValidateFirstName() {
       nameErr = false;
     }
   }
+
+  return nameErr;
 }
 
 function ValidateLastName() {
@@ -37,6 +39,8 @@ function ValidateLastName() {
       nameErr = false;
     }
   }
+
+  return nameErr;
 }
 
 function ValidateSuffix() {
@@ -49,13 +53,21 @@ function ValidateSuffix() {
     printError("suffixError", "");
     suffixErr = false;
   }
+
+  return suffixErr;
 }
 
 function ValidateCredentials() {
   let credentials = document.signUpForm.credentials.value;
+  let credentialsErr = true;
   if (credentials == "") {
     printError("credentialsError", "Please enter credentials");
+  } else {
+    printError("credentialsError", "");
+    credentialsErr = false;
   }
+
+  return credentialsErr;
 }
 
 function ValidatePhoneNumber() {
@@ -76,24 +88,33 @@ function ValidatePhoneNumber() {
       phoneNumberError = false;
     }
   }
+
+  return phoneNumberError;
 }
 
 function ValidateEmailAddress() {
   let emailAddress = document.signUpForm.email.value;
-  let emailaddrError = true;
+  let emailAddrError = true;
   if (emailAddress == "") {
     printError("emailAddressError", "Please enter your Email Address");
+    document.querySelector("#email").style.backgroundImage =
+      "url('../svgs/alert.svg')";
   } else {
     let validRegex =
       /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
     if (validRegex.test(emailAddress) === false) {
       printError("emailAddressError", "Please enter a valid Email address");
+      document.querySelector("#email").style.backgroundImage =
+        "url('../svgs/alert.svg')";
     } else {
       printError("emailAddressError", "");
-      emailaddrError = false;
+      document.querySelector("#email").style.backgroundImage = null;
+      emailAddrError = false;
     }
   }
+
+  return emailAddrError;
 }
 
 function ValidateState() {
@@ -106,6 +127,8 @@ function ValidateState() {
     printError("stateError", "");
     stateError = false;
   }
+
+  return stateError;
 }
 
 function ValidateAreaOfFocus() {
@@ -121,6 +144,8 @@ function ValidateAreaOfFocus() {
     printError("areaOfFocusError", "");
     areaOfFocusError = false;
   }
+
+  return areaOfFocusError;
 }
 
 function ValidateHourReferred() {
@@ -136,6 +161,8 @@ function ValidateHourReferred() {
     printError("hourReferredError", "");
     hourReferredError = false;
   }
+
+  return hourReferredError;
 }
 
 function ValidateTypicalResponseTime() {
@@ -151,6 +178,8 @@ function ValidateTypicalResponseTime() {
     printError("typicalResponseTimeError", "");
     typicalResponseTimeError = false;
   }
+
+  return typicalResponseTimeError;
 }
 
 function ValidateWaitTimeForPatient() {
@@ -166,4 +195,6 @@ function ValidateWaitTimeForPatient() {
     printError("waitTimeForPatientError", "");
     waitTimeForPatientError = false;
   }
+
+  return waitTimeForPatientError;
 }

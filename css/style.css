@@ -162,6 +162,7 @@ body {
   padding-right: 17px;
   padding-top: 5px;
   padding-bottom: 5px;
+  text-decoration: none;
 }
 
 .outerCont .introSection .ContactSection .Contact .mailLogo {
@@ -369,6 +370,7 @@ body {
   margin-left: 300px;
   margin-right: 300px;
   font-family: AxiFormaLight;
+  color: #515151;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .NameSection {
@@ -526,6 +528,8 @@ body {
 
 .outerCont .SignUpCont .SignUpFormCont .FormContactSection .EmailAddress .EmailInput {
   height: 40px;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .States {
@@ -741,10 +745,6 @@ body {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   width: 20px;
-}
-
-.outerCont .SignUpCont .SignUpFormCont .SubmitCont :hover {
-  width: 100px;
 }
 
 .outerCont .FooterCont {
