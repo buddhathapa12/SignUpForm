@@ -306,17 +306,17 @@ body {
       //   }
     }
     .SignUpFormCont {
-      margin-top: 30px;
+      margin-top: 50px;
+      margin-left: 50px;
+      margin-right: 50px;
       .NameSection {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
+        margin-bottom: 10px;
         .FirstName {
           display: flex;
           flex-direction: column;
-          .FirstNameLabel {
-            margin-bottom: 5px;
-          }
         }
         .LastName {
           display: flex;
@@ -327,10 +327,18 @@ body {
           flex-direction: column;
         }
       }
+
+      .CredentialsSection {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+      }
+
       .FormContactSection {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        margin-bottom: 20px;
         .PhoneNumber {
           flex: 1;
           display: flex;
@@ -343,6 +351,41 @@ body {
           padding-left: 20px;
         }
       }
+
+      .States {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+      }
+
+      .AreaOfFocusCont {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+      }
+
+      .HoursPatientReferredCont {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+      }
+
+      .TypicalResponseTime {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+      }
+
+      .WaitTimeForPatient {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+      }
+
+      .FeedbackToTulip {
+        display: flex;
+        flex-direction: column;
+      }
     }
   }
 
@@ -350,7 +393,7 @@ body {
     margin: 50px;
     .FooterHorizontalLine {
       border: 1px solid #0eeae6;
-      width: 100vw;
+      // width: 100vw;
       background-color: #0eeae6;
     }
     .Footer {
@@ -375,4 +418,8 @@ body {
 .error {
   color: #cf2808;
   text-align: right;
+}
+
+.LabelAndInputBoxMargin {
+  margin-bottom: 10px;
 }

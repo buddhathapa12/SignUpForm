@@ -359,7 +359,9 @@ body {
 }
 
 .outerCont .SignUpCont .SignUpFormCont {
-  margin-top: 30px;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .NameSection {
@@ -370,8 +372,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .NameSection .FirstName {
@@ -382,10 +386,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.outerCont .SignUpCont .SignUpFormCont .NameSection .FirstName .FirstNameLabel {
-  margin-bottom: 5px;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .NameSection .LastName {
@@ -408,6 +408,17 @@ body {
           flex-direction: column;
 }
 
+.outerCont .SignUpCont .SignUpFormCont .CredentialsSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+
 .outerCont .SignUpCont .SignUpFormCont .FormContactSection {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -418,6 +429,7 @@ body {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin-bottom: 20px;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .FormContactSection .PhoneNumber {
@@ -447,13 +459,77 @@ body {
   padding-left: 20px;
 }
 
+.outerCont .SignUpCont .SignUpFormCont .States {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.outerCont .SignUpCont .SignUpFormCont .AreaOfFocusCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.outerCont .SignUpCont .SignUpFormCont .HoursPatientReferredCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.outerCont .SignUpCont .SignUpFormCont .TypicalResponseTime {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.outerCont .SignUpCont .SignUpFormCont .WaitTimeForPatient {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.outerCont .SignUpCont .SignUpFormCont .FeedbackToTulip {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .outerCont .FooterCont {
   margin: 50px;
 }
 
 .outerCont .FooterCont .FooterHorizontalLine {
   border: 1px solid #0eeae6;
-  width: 100vw;
   background-color: #0eeae6;
 }
 
@@ -488,5 +564,9 @@ body {
 .error {
   color: #cf2808;
   text-align: right;
+}
+
+.LabelAndInputBoxMargin {
+  margin-bottom: 10px;
 }
 /*# sourceMappingURL=style.css.map */
