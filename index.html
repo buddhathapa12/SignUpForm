@@ -172,8 +172,8 @@
         <div class="SignUpFormCont">
           <form action="#" name="signUpForm">
             <div class="NameSection">
-              <div class="UserName">
-                <label>FIRST NAME</label>
+              <div class="FirstName">
+                <label class="FirstNameLabel">FIRST NAME</label>
                 <input
                   type="text"
                   name="firstName"
@@ -181,7 +181,7 @@
                 />
                 <div class="error" id="firstNameErr"></div>
               </div>
-              <div class="UserName">
+              <div class="LastName">
                 <label>LAST NAME</label>
                 <input
                   type="text"
@@ -231,7 +231,13 @@
               </div>
               <div class="EmailAddress">
                 <label for="Email">EMAIL</label>
-                <input type="email" id="email" name="email" />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  onblur="ValidateEmailAddress()"
+                />
+                <div class="error" id="emailAddressError"></div>
               </div>
             </div>
             <div class="States">
@@ -396,5 +402,5 @@
     </div>
   </body>
 
-  <script src="js/index.js"></script>
+  <script src="js/formValidation.js"></script>
 </html>

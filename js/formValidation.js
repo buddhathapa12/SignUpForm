@@ -77,6 +77,23 @@ function ValidatePhoneNumber() {
     }
   }
 }
+function ValidateEmailAddress() {
+  let emailAddress = document.signUpForm.email.value;
+  let emailaddrError = true;
+  if (emailAddress == "") {
+    printError("emailAddressError", "Please enter your Email Address");
+  } else {
+    let validRegex =
+      /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+    if (validRegex.test(emailAddress) === false) {
+      printError("emailAddressError", "Please enter a valid Email address");
+    } else {
+      printError("emailAddressError", "");
+      emailaddrError = false;
+    }
+  }
+}
 
 function ValidateState() {
   let state = document.signUpForm.state.value;

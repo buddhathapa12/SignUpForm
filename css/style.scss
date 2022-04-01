@@ -305,6 +305,45 @@ body {
       //     margin-top: 40px;
       //   }
     }
+    .SignUpFormCont {
+      margin-top: 30px;
+      .NameSection {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .FirstName {
+          display: flex;
+          flex-direction: column;
+          .FirstNameLabel {
+            margin-bottom: 5px;
+          }
+        }
+        .LastName {
+          display: flex;
+          flex-direction: column;
+        }
+        .SuffixSelector {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      .FormContactSection {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .PhoneNumber {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+        }
+        .EmailAddress {
+          flex: 2;
+          display: flex;
+          flex-direction: column;
+          padding-left: 20px;
+        }
+      }
+    }
   }
 
   .FooterCont {
@@ -331,4 +370,9 @@ body {
       }
     }
   }
+}
+
+.error {
+  color: #cf2808;
+  text-align: right;
 }

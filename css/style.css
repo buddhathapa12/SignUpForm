@@ -358,6 +358,95 @@ body {
   content: "\2714\0020";
 }
 
+.outerCont .SignUpCont .SignUpFormCont {
+  margin-top: 30px;
+}
+
+.outerCont .SignUpCont .SignUpFormCont .NameSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.outerCont .SignUpCont .SignUpFormCont .NameSection .FirstName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.outerCont .SignUpCont .SignUpFormCont .NameSection .FirstName .FirstNameLabel {
+  margin-bottom: 5px;
+}
+
+.outerCont .SignUpCont .SignUpFormCont .NameSection .LastName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.outerCont .SignUpCont .SignUpFormCont .NameSection .SuffixSelector {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.outerCont .SignUpCont .SignUpFormCont .FormContactSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.outerCont .SignUpCont .SignUpFormCont .FormContactSection .PhoneNumber {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.outerCont .SignUpCont .SignUpFormCont .FormContactSection .EmailAddress {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 20px;
+}
+
 .outerCont .FooterCont {
   margin: 50px;
 }
@@ -394,5 +483,10 @@ body {
 
 .outerCont .FooterCont .Footer .FooterContact .FooterColor {
   color: #000000;
+}
+
+.error {
+  color: #cf2808;
+  text-align: right;
 }
 /*# sourceMappingURL=style.css.map */
