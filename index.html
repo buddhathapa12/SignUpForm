@@ -177,6 +177,7 @@
                 <input
                   type="text"
                   name="firstName"
+                  class="FirstNameInput"
                   onblur="ValidateFirstName()"
                 />
                 <div class="error" id="firstNameErr"></div>
@@ -186,6 +187,7 @@
                 <input
                   type="text"
                   name="lastName"
+                  class="LastNameInput"
                   onblur="ValidateLastName()"
                 />
                 <div class="error" id="lastNameErr"></div>
@@ -194,7 +196,12 @@
                 <label for="Suffix" class="LabelAndInputBoxMargin"
                   >SUFFIX</label
                 >
-                <select id="suffix" name="suffix" onblur="ValidateSuffix()">
+                <select
+                  id="suffix"
+                  name="suffix"
+                  class="SuffixInput"
+                  onblur="ValidateSuffix()"
+                >
                   <option value="none" selected disabled hidden>
                     SELECT ...
                   </option>
@@ -211,12 +218,14 @@
               <label for="credentials" class="LabelAndInputBoxMargin"
                 >CREDENTIALS</label
               >
-              <input
+              <textarea
                 id="credentials"
                 maxlength="250"
                 name="credentials"
                 onblur="ValidateCredentials()"
-              />
+                class="CredentialsInputBox"
+                placeholder="Write a brief overview upto 250 characters..."
+              ></textarea>
               <div class="error" id="credentialsError"></div>
             </div>
             <div class="FormContactSection">
@@ -228,6 +237,7 @@
                   type="tel"
                   id="phoneNumber"
                   name="phoneNumber"
+                  class="PhoneNumberInput"
                   pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                   required
                   maxlength="10"
@@ -241,6 +251,7 @@
                   type="email"
                   id="email"
                   name="email"
+                  class="EmailInput"
                   onblur="ValidateEmailAddress()"
                 />
                 <div class="error" id="emailAddressError"></div>
@@ -250,7 +261,12 @@
               <label for="state" class="LabelAndInputBoxMargin"
                 >STATE(s) WHERE YOU CAN PRACTICE TELEMEDICINE:
               </label>
-              <select id="state" name="state" onblur="ValidateState()">
+              <select
+                id="state"
+                name="state"
+                class="StateInput"
+                onblur="ValidateState()"
+              >
                 <option value="none" selected disabled hidden>
                   SELECT ...
                 </option>
@@ -312,12 +328,14 @@
               <label for="areaOfFocus" class="LabelAndInputBoxMargin"
                 >AREA OF FOCUS</label
               >
-              <input
+              <textarea
                 id="areaOfFocus"
                 maxlength="250"
                 name="areaOfFocus"
+                class="AreaOfFocusInput"
+                placeholder="Write a brief overview upto 250 characters..."
                 onblur="ValidateAreaOfFocus()"
-              />
+              ></textarea>
               <div class="error" id="areaOfFocusError"></div>
             </div>
             <div class="HoursPatientReferredCont">
@@ -328,6 +346,7 @@
               <select
                 name="hourReferred"
                 id="hourReferred"
+                class="HourReferredInput"
                 onblur="ValidateHourReferred()"
               >
                 <option value="none" selected disabled hidden>
@@ -345,6 +364,7 @@
               <select
                 name="typicalResponseTime"
                 id="typicalResponseTime"
+                class="TypicalResponseTimeInput"
                 onblur="ValidateTypicalResponseTime()"
               >
                 <option value="none" selected disabled hidden>
@@ -369,6 +389,7 @@
               <select
                 name="waitTimeForPatient"
                 id="waitTimeForPatient"
+                class="WaitTimeForPatientInput"
                 onblur="ValidateWaitTimeForPatient()"
               >
                 <option value="none" selected disabled hidden>
@@ -389,7 +410,11 @@
               <label for="feedBackToTulip" class="LabelAndInputBoxMargin"
                 >Anything else you want us to know?</label
               >
-              <input type="text" />
+              <textarea
+                type="text"
+                class="FeedbackToTulipInput"
+                placeholder="Please add anything else you think we should know, up to 1000 characters..."
+              ></textarea>
             </div>
           </form>
         </div>

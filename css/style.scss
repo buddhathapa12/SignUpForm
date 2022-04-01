@@ -163,6 +163,8 @@ body {
       top: 50%;
       left: 12.5%;
       right: 12.5%;
+      // margin-left: auto;
+      // margin-right: auto;
       align-items: center;
       .IntroTitleText {
         text-align: center;
@@ -204,11 +206,13 @@ body {
 
   .DetailInfoCont {
     margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
     .DefinitionCont {
       display: flex;
       flex-direction: row;
-      margin-left: 10%;
-      margin-right: 10%;
+      margin-left: auto;
+      margin-right: auto;
       margin-bottom: 20px;
       padding-right: 30px;
       .ImageSectionCont {
@@ -256,6 +260,8 @@ body {
 
   .SignUpCont {
     padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
     .GetStarted {
       text-align: center;
       font-size: 35px;
@@ -275,11 +281,12 @@ body {
       display: flex;
       flex-direction: column;
       margin-top: 40px;
-      margin-left: 25%;
-      margin-right: 25%;
+      margin-left: auto;
+      margin-right: auto;
       border: solid;
       border-color: #0debe8;
       border-width: 2px;
+      width: 800px;
 
       .RequirementSubCont {
         margin: 30px 60px 20px 100px;
@@ -301,14 +308,12 @@ body {
           }
         }
       }
-      //   .RequirementHeader {
-      //     margin-top: 40px;
-      //   }
     }
     .SignUpFormCont {
       margin-top: 50px;
-      margin-left: 50px;
-      margin-right: 50px;
+      margin-left: 300px;
+      margin-right: 300px;
+      font-family: AxiFormaLight;
       .NameSection {
         display: flex;
         flex-direction: row;
@@ -317,14 +322,28 @@ body {
         .FirstName {
           display: flex;
           flex-direction: column;
+          .FirstNameInput {
+            height: 40px;
+            width: 250px;
+          }
         }
         .LastName {
           display: flex;
           flex-direction: column;
+          .LastNameInput {
+            height: 40px;
+            width: 250px;
+          }
         }
         .SuffixSelector {
           display: flex;
           flex-direction: column;
+          .SuffixInput {
+            height: 40px;
+            width: 200px;
+            font-family: AxiformaLightItalic;
+            font-size: 20px;
+          }
         }
       }
 
@@ -332,6 +351,15 @@ body {
         display: flex;
         flex-direction: column;
         margin-bottom: 20px;
+        .CredentialsInputBox {
+          padding: 10px;
+          height: 90px;
+          font-family: AxiformaLightItalic;
+          font-size: 20px;
+        }
+        ::placeholder {
+          opacity: 0.5;
+        }
       }
 
       .FormContactSection {
@@ -343,12 +371,19 @@ body {
           flex: 1;
           display: flex;
           flex-direction: column;
+          .PhoneNumberInput {
+            height: 40px;
+            width: 250px;
+          }
         }
         .EmailAddress {
           flex: 2;
           display: flex;
           flex-direction: column;
           padding-left: 20px;
+          .EmailInput {
+            height: 40px;
+          }
         }
       }
 
@@ -356,35 +391,77 @@ body {
         display: flex;
         flex-direction: column;
         margin-bottom: 20px;
+        .StateInput {
+          height: 40px;
+          width: 200px;
+          font-family: AxiformaLightItalic;
+          font-size: 20px;
+        }
       }
 
       .AreaOfFocusCont {
         display: flex;
         flex-direction: column;
         margin-bottom: 20px;
+        .AreaOfFocusInput {
+          padding: 10px;
+          height: 90px;
+          font-family: AxiformaLightItalic;
+          font-size: 20px;
+        }
+        ::placeholder {
+          opacity: 0.5;
+        }
       }
 
       .HoursPatientReferredCont {
         display: flex;
         flex-direction: column;
         margin-bottom: 20px;
+        .HourReferredInput {
+          height: 40px;
+          width: 400px;
+          font-family: AxiformaLightItalic;
+          font-size: 20px;
+        }
       }
 
       .TypicalResponseTime {
         display: flex;
         flex-direction: column;
         margin-bottom: 20px;
+        .TypicalResponseTimeInput {
+          height: 40px;
+          width: 400px;
+          font-family: AxiformaLightItalic;
+          font-size: 20px;
+        }
       }
 
       .WaitTimeForPatient {
         display: flex;
         flex-direction: column;
         margin-bottom: 20px;
+        .WaitTimeForPatientInput {
+          height: 40px;
+          width: 400px;
+          font-family: AxiformaLightItalic;
+          font-size: 20px;
+        }
       }
 
       .FeedbackToTulip {
         display: flex;
         flex-direction: column;
+        .FeedbackToTulipInput {
+          padding: 10px;
+          height: 90px;
+          font-family: AxiformaLightItalic;
+          font-size: 20px;
+        }
+        ::placeholder {
+          opacity: 0.5;
+        }
       }
     }
   }

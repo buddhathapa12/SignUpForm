@@ -225,6 +225,8 @@ body {
 
 .outerCont .DetailInfoCont {
   margin-top: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .outerCont .DetailInfoCont .DefinitionCont {
@@ -235,8 +237,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 20px;
   padding-right: 30px;
 }
@@ -302,6 +304,8 @@ body {
 
 .outerCont .SignUpCont {
   padding: 40px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .outerCont .SignUpCont .GetStarted {
@@ -328,11 +332,12 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 40px;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: auto;
+  margin-right: auto;
   border: solid;
   border-color: #0debe8;
   border-width: 2px;
+  width: 800px;
 }
 
 .outerCont .SignUpCont .RequirementCont .RequirementSubCont {
@@ -360,8 +365,9 @@ body {
 
 .outerCont .SignUpCont .SignUpFormCont {
   margin-top: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 300px;
+  margin-right: 300px;
+  font-family: AxiFormaLight;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .NameSection {
@@ -388,6 +394,11 @@ body {
           flex-direction: column;
 }
 
+.outerCont .SignUpCont .SignUpFormCont .NameSection .FirstName .FirstNameInput {
+  height: 40px;
+  width: 250px;
+}
+
 .outerCont .SignUpCont .SignUpFormCont .NameSection .LastName {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -396,6 +407,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.outerCont .SignUpCont .SignUpFormCont .NameSection .LastName .LastNameInput {
+  height: 40px;
+  width: 250px;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .NameSection .SuffixSelector {
@@ -408,6 +424,13 @@ body {
           flex-direction: column;
 }
 
+.outerCont .SignUpCont .SignUpFormCont .NameSection .SuffixSelector .SuffixInput {
+  height: 40px;
+  width: 200px;
+  font-family: AxiformaLightItalic;
+  font-size: 20px;
+}
+
 .outerCont .SignUpCont .SignUpFormCont .CredentialsSection {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -417,6 +440,29 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 20px;
+}
+
+.outerCont .SignUpCont .SignUpFormCont .CredentialsSection .CredentialsInputBox {
+  padding: 10px;
+  height: 90px;
+  font-family: AxiformaLightItalic;
+  font-size: 20px;
+}
+
+.outerCont .SignUpCont .SignUpFormCont .CredentialsSection ::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+
+.outerCont .SignUpCont .SignUpFormCont .CredentialsSection :-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+.outerCont .SignUpCont .SignUpFormCont .CredentialsSection ::-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+.outerCont .SignUpCont .SignUpFormCont .CredentialsSection ::placeholder {
+  opacity: 0.5;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .FormContactSection {
@@ -445,6 +491,11 @@ body {
           flex-direction: column;
 }
 
+.outerCont .SignUpCont .SignUpFormCont .FormContactSection .PhoneNumber .PhoneNumberInput {
+  height: 40px;
+  width: 250px;
+}
+
 .outerCont .SignUpCont .SignUpFormCont .FormContactSection .EmailAddress {
   -webkit-box-flex: 2;
       -ms-flex: 2;
@@ -459,6 +510,10 @@ body {
   padding-left: 20px;
 }
 
+.outerCont .SignUpCont .SignUpFormCont .FormContactSection .EmailAddress .EmailInput {
+  height: 40px;
+}
+
 .outerCont .SignUpCont .SignUpFormCont .States {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -468,6 +523,13 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 20px;
+}
+
+.outerCont .SignUpCont .SignUpFormCont .States .StateInput {
+  height: 40px;
+  width: 200px;
+  font-family: AxiformaLightItalic;
+  font-size: 20px;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .AreaOfFocusCont {
@@ -481,6 +543,29 @@ body {
   margin-bottom: 20px;
 }
 
+.outerCont .SignUpCont .SignUpFormCont .AreaOfFocusCont .AreaOfFocusInput {
+  padding: 10px;
+  height: 90px;
+  font-family: AxiformaLightItalic;
+  font-size: 20px;
+}
+
+.outerCont .SignUpCont .SignUpFormCont .AreaOfFocusCont ::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+
+.outerCont .SignUpCont .SignUpFormCont .AreaOfFocusCont :-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+.outerCont .SignUpCont .SignUpFormCont .AreaOfFocusCont ::-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+.outerCont .SignUpCont .SignUpFormCont .AreaOfFocusCont ::placeholder {
+  opacity: 0.5;
+}
+
 .outerCont .SignUpCont .SignUpFormCont .HoursPatientReferredCont {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -490,6 +575,13 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 20px;
+}
+
+.outerCont .SignUpCont .SignUpFormCont .HoursPatientReferredCont .HourReferredInput {
+  height: 40px;
+  width: 400px;
+  font-family: AxiformaLightItalic;
+  font-size: 20px;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .TypicalResponseTime {
@@ -503,6 +595,13 @@ body {
   margin-bottom: 20px;
 }
 
+.outerCont .SignUpCont .SignUpFormCont .TypicalResponseTime .TypicalResponseTimeInput {
+  height: 40px;
+  width: 400px;
+  font-family: AxiformaLightItalic;
+  font-size: 20px;
+}
+
 .outerCont .SignUpCont .SignUpFormCont .WaitTimeForPatient {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -514,6 +613,13 @@ body {
   margin-bottom: 20px;
 }
 
+.outerCont .SignUpCont .SignUpFormCont .WaitTimeForPatient .WaitTimeForPatientInput {
+  height: 40px;
+  width: 400px;
+  font-family: AxiformaLightItalic;
+  font-size: 20px;
+}
+
 .outerCont .SignUpCont .SignUpFormCont .FeedbackToTulip {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -522,6 +628,29 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.outerCont .SignUpCont .SignUpFormCont .FeedbackToTulip .FeedbackToTulipInput {
+  padding: 10px;
+  height: 90px;
+  font-family: AxiformaLightItalic;
+  font-size: 20px;
+}
+
+.outerCont .SignUpCont .SignUpFormCont .FeedbackToTulip ::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+
+.outerCont .SignUpCont .SignUpFormCont .FeedbackToTulip :-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+.outerCont .SignUpCont .SignUpFormCont .FeedbackToTulip ::-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+.outerCont .SignUpCont .SignUpFormCont .FeedbackToTulip ::placeholder {
+  opacity: 0.5;
 }
 
 .outerCont .FooterCont {
