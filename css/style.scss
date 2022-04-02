@@ -451,6 +451,10 @@ body {
             appearance: none;
             // background-color: #ffffff;
             // padding-right: 15px;
+            @media (max-width: 800px) {
+              // width: auto;
+              font-size: 15px;
+            }
           }
         }
       }
@@ -469,6 +473,7 @@ body {
           font-size: 20px;
           @media (max-width: 800px) {
             width: auto;
+            font-size: 15px;
           }
         }
         ::placeholder {
@@ -527,6 +532,9 @@ body {
           padding-left: 10px;
           padding-right: 10px;
           appearance: none;
+          @media (max-width: 800px) {
+            font-size: 15px;
+          }
         }
         .error {
           text-align: start;
@@ -542,6 +550,10 @@ body {
           height: 90px;
           font-family: AxiformaLight;
           font-size: 20px;
+          @media (max-width: 800px) {
+            width: auto;
+            font-size: 15px;
+          }
         }
         ::placeholder {
           opacity: 0.5;
@@ -565,6 +577,10 @@ body {
           padding-left: 10px;
           padding-right: 10px;
           appearance: none;
+          @media (max-width: 420px) {
+            width: auto;
+            font-size: 15px;
+          }
         }
         .error {
           text-align: start;
@@ -587,6 +603,10 @@ body {
           padding-left: 10px;
           padding-right: 10px;
           appearance: none;
+          @media (max-width: 420px) {
+            width: auto;
+            font-size: 15px;
+          }
         }
         .error {
           text-align: start;
@@ -609,6 +629,10 @@ body {
           padding-left: 10px;
           padding-right: 10px;
           appearance: none;
+          @media (max-width: 420px) {
+            width: auto;
+            font-size: 15px;
+          }
         }
         .error {
           text-align: start;
@@ -623,6 +647,10 @@ body {
           height: 90px;
           font-family: AxiformaLight;
           font-size: 20px;
+          @media (max-width: 420px) {
+            width: auto;
+            font-size: 15px;
+          }
         }
         ::placeholder {
           opacity: 0.5;

@@ -603,6 +603,12 @@ body {
           appearance: none;
 }
 
+@media (max-width: 800px) {
+  .outerCont .SignUpCont .SignUpFormCont .NameSection .SuffixSelector .SuffixInput {
+    font-size: 15px;
+  }
+}
+
 .outerCont .SignUpCont .SignUpFormCont .CredentialsSection {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -630,6 +636,7 @@ body {
 @media (max-width: 800px) {
   .outerCont .SignUpCont .SignUpFormCont .CredentialsSection .CredentialsInputBox {
     width: auto;
+    font-size: 15px;
   }
 }
 
@@ -746,6 +753,12 @@ body {
           appearance: none;
 }
 
+@media (max-width: 800px) {
+  .outerCont .SignUpCont .SignUpFormCont .States .StateInput {
+    font-size: 15px;
+  }
+}
+
 .outerCont .SignUpCont .SignUpFormCont .States .error {
   text-align: start;
 }
@@ -766,6 +779,13 @@ body {
   height: 90px;
   font-family: AxiformaLight;
   font-size: 20px;
+}
+
+@media (max-width: 800px) {
+  .outerCont .SignUpCont .SignUpFormCont .AreaOfFocusCont .AreaOfFocusInput {
+    width: auto;
+    font-size: 15px;
+  }
 }
 
 .outerCont .SignUpCont .SignUpFormCont .AreaOfFocusCont ::-webkit-input-placeholder {
@@ -815,6 +835,13 @@ body {
           appearance: none;
 }
 
+@media (max-width: 420px) {
+  .outerCont .SignUpCont .SignUpFormCont .HoursPatientReferredCont .HourReferredInput {
+    width: auto;
+    font-size: 15px;
+  }
+}
+
 .outerCont .SignUpCont .SignUpFormCont .HoursPatientReferredCont .error {
   text-align: start;
 }
@@ -844,6 +871,13 @@ body {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+}
+
+@media (max-width: 420px) {
+  .outerCont .SignUpCont .SignUpFormCont .TypicalResponseTime .TypicalResponseTimeInput {
+    width: auto;
+    font-size: 15px;
+  }
 }
 
 .outerCont .SignUpCont .SignUpFormCont .TypicalResponseTime .error {
@@ -877,6 +911,13 @@ body {
           appearance: none;
 }
 
+@media (max-width: 420px) {
+  .outerCont .SignUpCont .SignUpFormCont .WaitTimeForPatient .WaitTimeForPatientInput {
+    width: auto;
+    font-size: 15px;
+  }
+}
+
 .outerCont .SignUpCont .SignUpFormCont .WaitTimeForPatient .error {
   text-align: start;
 }
@@ -896,6 +937,13 @@ body {
   height: 90px;
   font-family: AxiformaLight;
   font-size: 20px;
+}
+
+@media (max-width: 420px) {
+  .outerCont .SignUpCont .SignUpFormCont .FeedbackToTulip .FeedbackToTulipInput {
+    width: auto;
+    font-size: 15px;
+  }
 }
 
 .outerCont .SignUpCont .SignUpFormCont .FeedbackToTulip ::-webkit-input-placeholder {
