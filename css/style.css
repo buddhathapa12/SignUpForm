@@ -221,11 +221,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.outerCont .introSection .ArrowDownButtonCont .ArrowDownButton {
-  width: 70px;
-  padding-left: 43%;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: #000000;
+  -webkit-mask: url(/svgs/arrowDown.svg) no-repeat center;
+  mask: url(/svgs/arrowDown.svg) no-repeat center;
 }
 
 .outerCont .DetailInfoCont {
@@ -792,18 +792,31 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .SubmitCont .SubmitText {
-  padding-top: 5px;
-  text-align: center;
+  text-align: left;
   font-family: AxiFormaBold;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  top: 0;
+  left: 0;
+  padding-left: 20px;
+  font-size: 20px;
+  border: 0;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .SubmitCont .SubmitIcon {
+  position: absolute;
+  right: 0;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   width: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
 }
 
 .outerCont .FooterCont {
