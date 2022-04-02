@@ -204,6 +204,7 @@ body {
         padding-right: 20%;
         @media (max-width: 900px) {
           font-size: 20px;
+          padding: 0px;
         }
       }
     }
@@ -221,16 +222,8 @@ body {
       background-color: #000000;
       -webkit-mask: url(/svgs/arrowDown.svg) no-repeat center;
       mask: url(/svgs/arrowDown.svg) no-repeat center;
-      //   padding-left: 50px;
-      //   padding-top: 40px;
-      // .ArrowDownButton {
-      //   // max-width: 150px;
-      //   width: 70px;
-      //   padding-left: 43%;
-      //   // text-color: #000000;
-      // }
       @media (max-width: 900px) {
-        bottom: 20px;
+        bottom: 50px;
       }
     }
   }
@@ -508,8 +501,7 @@ body {
           flex-direction: column;
           padding-left: 20px;
           @media (max-width: 900px) {
-            padding-left: 0px;
-            // max-width: 800px;
+            padding: 0px;
           }
           .EmailInput {
             height: 40px;
