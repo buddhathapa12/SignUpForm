@@ -470,9 +470,7 @@ body {
 
 @media (max-width: 900px) {
   .outerCont .SignUpCont .RequirementCont {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    width: 90vw;
     padding-left: 5px;
     padding-right: 5px;
   }
@@ -635,7 +633,7 @@ body {
 
 @media (max-width: 800px) {
   .outerCont .SignUpCont .SignUpFormCont .CredentialsSection .CredentialsInputBox {
-    width: auto;
+    width: 90vw;
     font-size: 15px;
   }
 }
@@ -658,6 +656,12 @@ body {
 .outerCont .SignUpCont .SignUpFormCont .CredentialsSection ::placeholder {
   opacity: 0.5;
   font-family: AxiformaLightItalic;
+}
+
+.outerCont .SignUpCont .SignUpFormCont .CredentialsSection #credentialsCount {
+  float: right;
+  padding: 0.1rem 0 0 0;
+  font-size: 0.875rem;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .FormContactSection {
@@ -717,13 +721,12 @@ body {
 @media (max-width: 900px) {
   .outerCont .SignUpCont .SignUpFormCont .FormContactSection .EmailAddress {
     padding: 0px;
+    width: 90vw;
   }
 }
 
 .outerCont .SignUpCont .SignUpFormCont .FormContactSection .EmailAddress .EmailInput {
   height: 40px;
-  background-repeat: no-repeat;
-  background-position: right;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .States {
@@ -783,7 +786,7 @@ body {
 
 @media (max-width: 800px) {
   .outerCont .SignUpCont .SignUpFormCont .AreaOfFocusCont .AreaOfFocusInput {
-    width: auto;
+    width: 90vw;
     font-size: 15px;
   }
 }
@@ -837,7 +840,7 @@ body {
 
 @media (max-width: 420px) {
   .outerCont .SignUpCont .SignUpFormCont .HoursPatientReferredCont .HourReferredInput {
-    width: auto;
+    width: 90vw;
     font-size: 15px;
   }
 }
@@ -875,7 +878,7 @@ body {
 
 @media (max-width: 420px) {
   .outerCont .SignUpCont .SignUpFormCont .TypicalResponseTime .TypicalResponseTimeInput {
-    width: auto;
+    width: 90vw;
     font-size: 15px;
   }
 }
@@ -913,7 +916,7 @@ body {
 
 @media (max-width: 420px) {
   .outerCont .SignUpCont .SignUpFormCont .WaitTimeForPatient .WaitTimeForPatientInput {
-    width: auto;
+    width: 90vw;
     font-size: 15px;
   }
 }
@@ -939,9 +942,9 @@ body {
   font-size: 20px;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 900px) {
   .outerCont .SignUpCont .SignUpFormCont .FeedbackToTulip .FeedbackToTulipInput {
-    width: auto;
+    width: 90vw;
     font-size: 15px;
   }
 }
@@ -1024,6 +1027,14 @@ body {
   background-image: linear-gradient(to right, #0cebeb, #29fec6);
 }
 
+@media (max-width: 900px) {
+  .outerCont .FooterCont .FooterHorizontalLine {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .outerCont .FooterCont .Footer {
   margin-top: 20px;
   display: -webkit-box;
@@ -1035,6 +1046,15 @@ body {
           flex-direction: row;
 }
 
+@media (max-width: 900px) {
+  .outerCont .FooterCont .Footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .outerCont .FooterCont .Footer .Copyright {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -1042,11 +1062,24 @@ body {
   color: #8f99ad;
 }
 
+@media (max-width: 900px) {
+  .outerCont .FooterCont .Footer .Copyright {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+
 .outerCont .FooterCont .Footer .FooterContact {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   text-align: right;
+}
+
+@media (max-width: 900px) {
+  .outerCont .FooterCont .Footer .FooterContact {
+    text-align: center;
+  }
 }
 
 .outerCont .FooterCont .Footer .FooterContact .FooterColor {

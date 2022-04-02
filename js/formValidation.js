@@ -93,23 +93,30 @@ function ValidatePhoneNumber() {
 }
 
 function ValidateEmailAddress() {
+  let emailCont = document.querySelector("#email");
   let emailAddress = document.signUpForm.email.value;
   let emailAddrError = true;
   if (emailAddress == "") {
     printError("emailAddressError", "Please enter your Email Address");
-    document.querySelector("#email").style.backgroundImage =
-      "url('../svgs/alert.svg')";
+
+    emailCont.style.backgroundImage = "url('../svgs/alert.svg')";
+    emailCont.style.backgroundPosition = "right";
+    emailCont.style.backgroundRepeat = "no-repeat";
+    emailCont.style.color = "red";
   } else {
     let validRegex =
       /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
     if (validRegex.test(emailAddress) === false) {
       printError("emailAddressError", "Please enter a valid Email address");
-      document.querySelector("#email").style.backgroundImage =
-        "url('../svgs/alert.svg')";
+      emailCont.style.backgroundImage = "url('../svgs/alert.svg')";
+      emailCont.style.backgroundPosition = "right";
+      emailCont.style.backgroundRepeat = "no-repeat";
     } else {
       printError("emailAddressError", "");
       document.querySelector("#email").style.backgroundImage = null;
+      emailCont.style.backgroundPosition = null;
+      emailCont.style.backgroundRepeat = null;
       emailAddrError = false;
     }
   }

@@ -227,6 +227,10 @@
                 class="CredentialsInputBox"
                 placeholder="Write a brief overview upto 250 characters..."
               ></textarea>
+              <div id="credentialsCount">
+                <span id="currentCredentialsCount">0</span>
+                <span>/ 250</span>
+              </div>
               <div class="error" id="credentialsError"></div>
             </div>
             <div class="FormContactSection">
@@ -337,6 +341,10 @@
                 placeholder="Write a brief overview upto 250 characters..."
                 onblur="ValidateAreaOfFocus()"
               ></textarea>
+              <div id="areaOfFocusInputCount">
+                <span id="currentareaOfFocusInputsCount">0</span>
+                <span>/ 250</span>
+              </div>
               <div class="error" id="areaOfFocusError"></div>
             </div>
             <div class="HoursPatientReferredCont">
@@ -415,7 +423,13 @@
                 type="text"
                 class="FeedbackToTulipInput"
                 placeholder="Please add anything else you think we should know, up to 1000 characters..."
+                maxlength="1000"
+                name="feedbackToTulip"
               ></textarea>
+              <div id="FeedbackToTulipInputCount">
+                <span id="currentFeedbackToTulipInputCount">0</span>
+                <span>/ 1000</span>
+              </div>
             </div>
             <div class="SubmitCont" type="submit">
               <!-- <div class="SubmitText">Send It!</div>
@@ -451,4 +465,5 @@
   </body>
 
   <script src="js/formValidation.js"></script>
+  <script src="/js/characterCount.js"></script>
 </html>

@@ -355,6 +355,7 @@ body {
       text-align: center;
       font-family: AxiFormaBook;
       color: #585858;
+      // width: 90vw;
     }
 
     .RequirementCont {
@@ -368,7 +369,7 @@ body {
       border-width: 2px;
       width: 800px;
       @media (max-width: 900px) {
-        width: fit-content;
+        width: 90vw;
         padding-left: 5px;
         padding-right: 5px;
       }
@@ -472,13 +473,18 @@ body {
           font-family: AxiformaLight;
           font-size: 20px;
           @media (max-width: 800px) {
-            width: auto;
+            width: 90vw;
             font-size: 15px;
           }
         }
         ::placeholder {
           opacity: 0.5;
           font-family: AxiformaLightItalic;
+        }
+        #credentialsCount {
+          float: right;
+          padding: 0.1rem 0 0 0;
+          font-size: 0.875rem;
         }
       }
 
@@ -507,11 +513,14 @@ body {
           padding-left: 20px;
           @media (max-width: 900px) {
             padding: 0px;
+            width: 90vw;
           }
           .EmailInput {
             height: 40px;
-            background-repeat: no-repeat;
-            background-position: right;
+            // background-image: url("../svgs/alert.svg");
+            // background-color: rgba(0, 0, 0, 0);
+            // background-repeat: no-repeat;
+            // background-position: right;
           }
         }
       }
@@ -551,7 +560,7 @@ body {
           font-family: AxiformaLight;
           font-size: 20px;
           @media (max-width: 800px) {
-            width: auto;
+            width: 90vw;
             font-size: 15px;
           }
         }
@@ -578,7 +587,7 @@ body {
           padding-right: 10px;
           appearance: none;
           @media (max-width: 420px) {
-            width: auto;
+            width: 90vw;
             font-size: 15px;
           }
         }
@@ -604,7 +613,7 @@ body {
           padding-right: 10px;
           appearance: none;
           @media (max-width: 420px) {
-            width: auto;
+            width: 90vw;
             font-size: 15px;
           }
         }
@@ -630,7 +639,7 @@ body {
           padding-right: 10px;
           appearance: none;
           @media (max-width: 420px) {
-            width: auto;
+            width: 90vw;
             font-size: 15px;
           }
         }
@@ -647,8 +656,8 @@ body {
           height: 90px;
           font-family: AxiformaLight;
           font-size: 20px;
-          @media (max-width: 420px) {
-            width: auto;
+          @media (max-width: 900px) {
+            width: 90vw;
             font-size: 15px;
           }
         }
@@ -705,19 +714,33 @@ body {
     .FooterHorizontalLine {
       height: 4px;
       background-image: linear-gradient(to right, #0cebeb, #29fec6);
+      @media (max-width: 900px) {
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
     .Footer {
       margin-top: 20px;
       display: flex;
       flex-direction: row;
+      @media (max-width: 900px) {
+        flex-direction: column;
+      }
       .Copyright {
         flex: 1;
         color: #8f99ad;
+        @media (max-width: 900px) {
+          text-align: center;
+          padding-bottom: 20px;
+        }
       }
       .FooterContact {
         flex: 1;
         text-align: right;
-
+        @media (max-width: 900px) {
+          text-align: center;
+        }
         .FooterColor {
           color: #585b65;
         }
