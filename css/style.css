@@ -3,12 +3,7 @@
   margin: 0;
 }
 
-html {
-  width: 100vw;
-}
-
 body {
-  width: 100%;
   overflow-x: hidden;
 }
 
@@ -129,10 +124,13 @@ body {
   top: 0;
   padding-left: 3%;
   padding-top: 3%;
-}
-
-.outerCont .introSection .TulipCont .TulipLogo {
-  width: 50%;
+  background-color: #000000;
+  margin-left: 3%;
+  margin-top: 2%;
+  -webkit-mask: url(/svgs/tulip-logo.svg) no-repeat center;
+  mask: url(logo.svg) no-repeat center;
+  -webkit-transform: scale(2);
+          transform: scale(2);
 }
 
 .outerCont .introSection .ContactSection {
@@ -177,6 +175,7 @@ body {
   font-size: 20px;
   font-weight: 100;
   font-family: AxiFormaBook;
+  color: #000000;
 }
 
 .outerCont .introSection .IntroTextCont {
@@ -194,7 +193,7 @@ body {
   font-size: 45px;
   font-weight: 800;
   font-family: AxiFormaBold;
-  color: #ffffff;
+  color: #000000;
 }
 
 .outerCont .introSection .IntroTextCont .IntroDescription {
@@ -203,7 +202,7 @@ body {
   font-size: 25px;
   font-weight: 400;
   font-family: AxiFormaBook;
-  color: #ffffff;
+  color: #000000;
   padding-left: 22%;
   padding-right: 20%;
 }
@@ -367,8 +366,9 @@ body {
 
 .outerCont .SignUpCont .SignUpFormCont {
   margin-top: 50px;
-  margin-left: 300px;
-  margin-right: 300px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
   font-family: AxiFormaLight;
   color: #515151;
 }
@@ -559,6 +559,10 @@ body {
           appearance: none;
 }
 
+.outerCont .SignUpCont .SignUpFormCont .States .error {
+  text-align: start;
+}
+
 .outerCont .SignUpCont .SignUpFormCont .AreaOfFocusCont {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -624,6 +628,10 @@ body {
           appearance: none;
 }
 
+.outerCont .SignUpCont .SignUpFormCont .HoursPatientReferredCont .error {
+  text-align: start;
+}
+
 .outerCont .SignUpCont .SignUpFormCont .TypicalResponseTime {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -651,6 +659,10 @@ body {
           appearance: none;
 }
 
+.outerCont .SignUpCont .SignUpFormCont .TypicalResponseTime .error {
+  text-align: start;
+}
+
 .outerCont .SignUpCont .SignUpFormCont .WaitTimeForPatient {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -676,6 +688,10 @@ body {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+}
+
+.outerCont .SignUpCont .SignUpFormCont .WaitTimeForPatient .error {
+  text-align: start;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .FeedbackToTulip {
@@ -749,11 +765,15 @@ body {
 
 .outerCont .FooterCont {
   margin: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
 }
 
 .outerCont .FooterCont .FooterHorizontalLine {
-  border: 1px solid #0eeae6;
-  background-color: #0eeae6;
+  height: 4px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#0cebeb), to(#29fec6));
+  background-image: linear-gradient(to right, #0cebeb, #29fec6);
 }
 
 .outerCont .FooterCont .Footer {
@@ -771,6 +791,7 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  color: #8f99ad;
 }
 
 .outerCont .FooterCont .Footer .FooterContact {
@@ -781,7 +802,7 @@ body {
 }
 
 .outerCont .FooterCont .Footer .FooterContact .FooterColor {
-  color: #000000;
+  color: #585b65;
 }
 
 .error {
@@ -791,5 +812,19 @@ body {
 
 .LabelAndInputBoxMargin {
   margin-bottom: 10px;
+}
+
+.Contact:hover {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.SubmitCont:hover {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.TulipLogo path {
+  fill: #000000;
 }
 /*# sourceMappingURL=style.css.map */

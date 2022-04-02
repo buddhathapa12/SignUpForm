@@ -3,12 +3,12 @@
   margin: 0;
 }
 
-html {
-  width: 100vw;
-}
+// html {
+//   width: 100vw;
+// }
 
 body {
-  width: 100%;
+  // width: 100%;
   overflow-x: hidden;
 }
 
@@ -118,9 +118,15 @@ body {
       top: 0;
       padding-left: 3%;
       padding-top: 3%;
-      .TulipLogo {
-        width: 50%;
-      }
+      background-color: #000000;
+      margin-left: 3%;
+      margin-top: 2%;
+      -webkit-mask: url(/svgs/tulip-logo.svg) no-repeat center;
+      mask: url(logo.svg) no-repeat center;
+      transform: scale(2);
+      // .TulipLogo {
+      //   width: 50%;
+      // }
     }
 
     .ContactSection {
@@ -153,6 +159,7 @@ body {
           font-size: 20px;
           font-weight: 100;
           font-family: AxiFormaBook;
+          color: #000000;
         }
       }
     }
@@ -165,12 +172,13 @@ body {
       // margin-left: auto;
       // margin-right: auto;
       align-items: center;
+      // padding-left: 350px;
       .IntroTitleText {
         text-align: center;
         font-size: 45px;
         font-weight: 800;
         font-family: AxiFormaBold;
-        color: #ffffff;
+        color: #000000;
       }
       .IntroDescription {
         margin-top: 30px;
@@ -178,7 +186,7 @@ body {
         font-size: 25px;
         font-weight: 400;
         font-family: AxiFormaBook;
-        color: #ffffff;
+        color: #000000;
         padding-left: 22%;
         padding-right: 20%;
       }
@@ -310,8 +318,9 @@ body {
     }
     .SignUpFormCont {
       margin-top: 50px;
-      margin-left: 300px;
-      margin-right: 300px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
       font-family: AxiFormaLight;
       color: #515151;
       .NameSection {
@@ -416,6 +425,9 @@ body {
           padding-right: 10px;
           appearance: none;
         }
+        .error {
+          text-align: start;
+        }
       }
 
       .AreaOfFocusCont {
@@ -451,6 +463,9 @@ body {
           padding-right: 10px;
           appearance: none;
         }
+        .error {
+          text-align: start;
+        }
       }
 
       .TypicalResponseTime {
@@ -470,6 +485,9 @@ body {
           padding-right: 10px;
           appearance: none;
         }
+        .error {
+          text-align: start;
+        }
       }
 
       .WaitTimeForPatient {
@@ -488,6 +506,9 @@ body {
           padding-left: 10px;
           padding-right: 10px;
           appearance: none;
+        }
+        .error {
+          text-align: start;
         }
       }
 
@@ -531,10 +552,12 @@ body {
 
   .FooterCont {
     margin: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
     .FooterHorizontalLine {
-      border: 1px solid #0eeae6;
-      // width: 100vw;
-      background-color: #0eeae6;
+      height: 4px;
+      background-image: linear-gradient(to right, #0cebeb, #29fec6);
     }
     .Footer {
       margin-top: 20px;
@@ -542,13 +565,14 @@ body {
       flex-direction: row;
       .Copyright {
         flex: 1;
+        color: #8f99ad;
       }
       .FooterContact {
         flex: 1;
         text-align: right;
 
         .FooterColor {
-          color: #000000;
+          color: #585b65;
         }
       }
     }
@@ -563,3 +587,21 @@ body {
 .LabelAndInputBoxMargin {
   margin-bottom: 10px;
 }
+
+.Contact:hover {
+  transform: scale(0.8);
+}
+
+.SubmitCont:hover {
+  transform: scale(0.8);
+}
+
+.TulipLogo path {
+  fill: #000000;
+}
+
+// .ArrowDownButtonCont:active {
+//   transition: all;
+//   transition-duration: 4s;
+//   transition-delay: 2s;
+// }
