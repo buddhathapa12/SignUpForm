@@ -198,3 +198,35 @@ function ValidateWaitTimeForPatient() {
 
   return waitTimeForPatientError;
 }
+
+function ValidationOnSubmit() {
+  let firstNameError = ValidateFirstName();
+  let lastNameError = ValidateLastName();
+  let suffixError = ValidateSuffix();
+  let credentialsError = ValidateCredentials();
+  let phoneNumberError = ValidatePhoneNumber();
+  let emailAddressError = ValidateEmailAddress();
+  let stateError = ValidateState();
+  let areaOfFocusError = ValidateAreaOfFocus();
+  let hourReferredError = ValidateHourReferred();
+  let typicalResponseTimeError = ValidateTypicalResponseTime();
+  let waitTimeForPatientError = ValidateWaitTimeForPatient();
+
+  if (
+    firstNameError ||
+    lastNameError ||
+    suffixError ||
+    credentialsError ||
+    phoneNumberError ||
+    emailAddressError ||
+    stateError ||
+    areaOfFocusError ||
+    hourReferredError ||
+    typicalResponseTimeError ||
+    waitTimeForPatientError
+  ) {
+    return false;
+  } else {
+    return true;
+  }
+}

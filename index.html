@@ -20,7 +20,8 @@
           <source src="backgroundVideo/backgroundVideo.mov" type="video/mp4" />
         </video>
         <div class="TulipCont">
-          <!-- <image class="TulipLogo" src="/svgs/tulip-logo.svg" /> -->
+          <!-- <svg src="/svgs/tulip-logo.svg"></svg> -->
+          <!-- <img class="TulipLogo" src="/svgs/tulip-logo.svg" /> -->
         </div>
         <div class="ContactSection">
           <a href="#" class="Contact">
@@ -170,7 +171,7 @@
           </div>
         </div>
         <div class="SignUpFormCont">
-          <form action="#" name="signUpForm">
+          <form action="#" name="signUpForm" onsubmit="ValidationOnSubmit()">
             <div class="NameSection">
               <div class="FirstName">
                 <label class="LabelAndInputBoxMargin">FIRST NAME</label>
@@ -416,13 +417,19 @@
                 placeholder="Please add anything else you think we should know, up to 1000 characters..."
               ></textarea>
             </div>
-            <div class="SubmitCont">
+            <div class="SubmitCont" type="submit">
               <div class="SubmitText">Send It!</div>
               <img
                 class="SubmitIcon"
                 src="/svgs/triangle-down.svg"
                 alt="arrow - side"
               />
+              <!-- <input type="submit" value="Send It!" class="SubmitText" />
+              <img
+                class="SubmitIcon"
+                src="/svgs/triangle-down.svg"
+                alt="arrow - side"
+              /> -->
             </div>
           </form>
         </div>

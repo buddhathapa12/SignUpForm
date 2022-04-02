@@ -3,7 +3,12 @@
   margin: 0;
 }
 
+html {
+  width: 100vw;
+}
+
 body {
+  width: 100%;
   overflow-x: hidden;
 }
 
@@ -122,15 +127,13 @@ body {
 .outerCont .introSection .TulipCont {
   position: absolute;
   top: 0;
-  padding-left: 3%;
-  padding-top: 3%;
   background-color: #000000;
   margin-left: 3%;
-  margin-top: 2%;
+  margin-top: 10px;
+  min-width: 100px;
+  min-height: 100px;
   -webkit-mask: url(/svgs/tulip-logo.svg) no-repeat center;
   mask: url(logo.svg) no-repeat center;
-  -webkit-transform: scale(2);
-          transform: scale(2);
 }
 
 .outerCont .introSection .ContactSection {
@@ -138,7 +141,7 @@ body {
   top: 0;
   right: 0;
   padding-right: 3%;
-  padding-top: 3%;
+  padding-top: 35px;
 }
 
 .outerCont .introSection .ContactSection .Contact {
@@ -301,6 +304,45 @@ body {
   font-size: 30px;
   color: #ffffff;
   font-family: AxiFormaMedium;
+}
+
+.outerCont .CarouselCont .CarouselSection {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+}
+
+.outerCont .CarouselCont .CarouselSection .CarouselElements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.outerCont .CarouselCont .CarouselSection .CarouselElements .CarouselItem {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.outerCont .CarouselCont .CarouselSection .CarouselElements .CarouselItem .CarouselDescriptionSection {
+  padding-top: 5px;
+  text-align: center;
 }
 
 .outerCont .SignUpCont {
