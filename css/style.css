@@ -817,11 +817,15 @@ body {
 .Contact:hover {
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
 }
 
 .SubmitCont:hover {
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
 }
 
 .TulipLogo path {

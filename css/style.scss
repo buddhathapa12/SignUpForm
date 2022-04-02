@@ -590,18 +590,14 @@ body {
 
 .Contact:hover {
   transform: scale(0.8);
+  transition-duration: 200ms;
 }
 
 .SubmitCont:hover {
   transform: scale(0.8);
+  transition-duration: 200ms;
 }
 
 .TulipLogo path {
   fill: #000000;
 }
-
-// .ArrowDownButtonCont:active {
-//   transition: all;
-//   transition-duration: 4s;
-//   transition-delay: 2s;
-// }
