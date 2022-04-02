@@ -145,6 +145,13 @@ body {
   padding-top: 35px;
 }
 
+@media (max-width: 900px) {
+  .outerCont .introSection .ContactSection {
+    padding-top: 40px;
+    padding-right: 30px;
+  }
+}
+
 .outerCont .introSection .ContactSection .Contact {
   border-style: solid;
   border-width: 1px;
@@ -187,6 +194,8 @@ body {
   top: 50%;
   left: 12.5%;
   right: 12.5%;
+  margin-left: auto;
+  margin-right: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -200,6 +209,12 @@ body {
   color: #000000;
 }
 
+@media (max-width: 900px) {
+  .outerCont .introSection .IntroTextCont .IntroTitleText {
+    font-size: 25px;
+  }
+}
+
 .outerCont .introSection .IntroTextCont .IntroDescription {
   margin-top: 30px;
   text-align: center;
@@ -209,6 +224,12 @@ body {
   color: #000000;
   padding-left: 22%;
   padding-right: 20%;
+}
+
+@media (max-width: 900px) {
+  .outerCont .introSection .IntroTextCont .IntroDescription {
+    font-size: 20px;
+  }
 }
 
 .outerCont .introSection .ArrowDownButtonCont {
@@ -228,10 +249,25 @@ body {
   mask: url(/svgs/arrowDown.svg) no-repeat center;
 }
 
+@media (max-width: 900px) {
+  .outerCont .introSection .ArrowDownButtonCont {
+    bottom: 20px;
+  }
+}
+
 .outerCont .DetailInfoCont {
   margin-top: 100px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1180px;
+}
+
+@media (max-width: 900px) {
+  .outerCont .DetailInfoCont {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .outerCont .DetailInfoCont .DefinitionCont {
@@ -245,7 +281,21 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
-  padding-right: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 900px) {
+  .outerCont .DetailInfoCont .DefinitionCont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .outerCont .DetailInfoCont .DefinitionCont .ImageSectionCont {
@@ -260,7 +310,20 @@ body {
 }
 
 .outerCont .DetailInfoCont .DefinitionCont .ImageSectionCont .ImageSection {
-  width: 500px;
+  width: 400px;
+  max-width: 400px;
+}
+
+@media (max-width: 1200px) {
+  .outerCont .DetailInfoCont .DefinitionCont .ImageSectionCont .ImageSection {
+    width: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .outerCont .DetailInfoCont .DefinitionCont .ImageSectionCont .ImageSection {
+    width: 200px;
+  }
 }
 
 .outerCont .DetailInfoCont .DefinitionCont .TextInformation {
@@ -280,24 +343,44 @@ body {
   margin: 70px;
 }
 
+@media (max-width: 900px) {
+  .outerCont .DetailInfoCont .DefinitionCont .TextInformation {
+    margin: 15px;
+  }
+}
+
 .outerCont .DetailInfoCont .DefinitionCont .TextInformation .TitleSection {
-  font-size: 50px;
+  font-size: 45px;
   color: #848fa5;
   font-family: AxiFormaLight;
   margin-bottom: 30px;
 }
 
+@media (max-width: 1200px) {
+  .outerCont .DetailInfoCont .DefinitionCont .TextInformation .TitleSection {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+}
+
 .outerCont .DetailInfoCont .DefinitionCont .TextInformation .descriptionSection {
-  font-size: 23px;
+  font-size: 20px;
   color: #4d4d4d;
   font-family: AxiFormaThin;
   line-height: 2em;
   font-weight: 700;
 }
 
+@media (max-width: 1200px) {
+  .outerCont .DetailInfoCont .DefinitionCont .TextInformation .descriptionSection {
+    font-size: 15px;
+  }
+}
+
 .outerCont .CarouselCont {
   padding: 40px;
   background-color: #363945;
+  height: 300px;
 }
 
 .outerCont .CarouselCont .CarouselHeader {
@@ -347,7 +430,7 @@ body {
 }
 
 .outerCont .SignUpCont {
-  padding: 40px;
+  margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -384,8 +467,25 @@ body {
   width: 800px;
 }
 
+@media (max-width: 900px) {
+  .outerCont .SignUpCont .RequirementCont {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
 .outerCont .SignUpCont .RequirementCont .RequirementSubCont {
   margin: 30px 60px 20px 100px;
+}
+
+@media (max-width: 750px) {
+  .outerCont .SignUpCont .RequirementCont .RequirementSubCont {
+    margin: auto;
+    padding: 10px;
+  }
 }
 
 .outerCont .SignUpCont .RequirementCont .RequirementSubCont .RequirementHeader {
@@ -416,6 +516,13 @@ body {
   color: #515151;
 }
 
+@media (max-width: 900px) {
+  .outerCont .SignUpCont .SignUpFormCont {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
 .outerCont .SignUpCont .SignUpFormCont .NameSection {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -428,6 +535,15 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+  .outerCont .SignUpCont .SignUpFormCont .NameSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .outerCont .SignUpCont .SignUpFormCont .NameSection .FirstName {
@@ -497,11 +613,23 @@ body {
   margin-bottom: 20px;
 }
 
+@media (max-width: 800px) {
+  .outerCont .SignUpCont .SignUpFormCont .CredentialsSection {
+    margin-right: 10px;
+  }
+}
+
 .outerCont .SignUpCont .SignUpFormCont .CredentialsSection .CredentialsInputBox {
   padding: 10px;
   height: 90px;
   font-family: AxiformaLight;
   font-size: 20px;
+}
+
+@media (max-width: 800px) {
+  .outerCont .SignUpCont .SignUpFormCont .CredentialsSection .CredentialsInputBox {
+    width: auto;
+  }
 }
 
 .outerCont .SignUpCont .SignUpFormCont .CredentialsSection ::-webkit-input-placeholder {
@@ -537,6 +665,15 @@ body {
   margin-bottom: 20px;
 }
 
+@media (max-width: 900px) {
+  .outerCont .SignUpCont .SignUpFormCont .FormContactSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .outerCont .SignUpCont .SignUpFormCont .FormContactSection .PhoneNumber {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -567,6 +704,12 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-left: 20px;
+}
+
+@media (max-width: 900px) {
+  .outerCont .SignUpCont .SignUpFormCont .FormContactSection .EmailAddress {
+    padding-left: 0px;
+  }
 }
 
 .outerCont .SignUpCont .SignUpFormCont .FormContactSection .EmailAddress .EmailInput {
@@ -886,5 +1029,17 @@ body {
 
 .TulipLogo path {
   fill: #000000;
+}
+
+@media (max-width: 900) {
+  #PatientEmpower {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 /*# sourceMappingURL=style.css.map */
