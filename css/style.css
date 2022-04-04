@@ -396,10 +396,55 @@ body {
   margin-left: auto;
   margin-right: auto;
   height: 300px;
+  max-width: 1060px;
+  position: relative;
+}
+
+.outerCont .CarouselCont .CarouselSection .nav {
+  top: 45%;
+  width: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.outerCont .CarouselCont .CarouselSection .nav button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #aaa;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.outerCont .CarouselCont .CarouselSection .nav .prev {
+  left: -30px;
+}
+
+.outerCont .CarouselCont .CarouselSection .nav .next {
+  right: -30px;
+}
+
+.outerCont .CarouselCont .CarouselSection .CarouselWrapper {
+  overflow: hidden;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 1000px;
 }
 
-.outerCont .CarouselCont .CarouselSection .CarouselElements {
+.outerCont .CarouselCont .CarouselSection .CarouselWrapper .CarouselElements {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -410,13 +455,16 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  overflow-x: hidden;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
 }
 
-.outerCont .CarouselCont .CarouselSection .CarouselElements .CarouselItem {
+.outerCont .CarouselCont .CarouselSection .CarouselWrapper .CarouselElements .CarouselItem {
   min-width: 300px;
   min-height: 250px;
   display: -webkit-box;
@@ -441,45 +489,22 @@ body {
   transition: transform 0.5s, opacity 0.5s, z-index 0.5s, -webkit-transform 0.5s;
 }
 
-.outerCont .CarouselCont .CarouselSection .CarouselElements .CarouselItem .LogoSection {
+.outerCont .CarouselCont .CarouselSection .CarouselWrapper .CarouselElements .CarouselItem .LogoSection {
   padding-top: 20px;
   stroke: #26937a;
 }
 
-.outerCont .CarouselCont .CarouselSection .CarouselElements .CarouselItem .TitleSection {
+.outerCont .CarouselCont .CarouselSection .CarouselWrapper .CarouselElements .CarouselItem .TitleSection {
   padding-top: 20px;
   font-family: AxiFormaLight;
   font-size: 30px;
 }
 
-.outerCont .CarouselCont .CarouselSection .CarouselElements .CarouselItem .CarouselDescriptionSection {
+.outerCont .CarouselCont .CarouselSection .CarouselWrapper .CarouselElements .CarouselItem .CarouselDescriptionSection {
   padding-top: 20px;
   text-align: center;
   font-family: AxiFormaLight;
   font-size: 20px;
-}
-
-.outerCont .CarouselCont .CarouselSection .nav {
-  position: relative;
-  top: 50%;
-  margin-top: -10px;
-  background-color: rgba(245, 234, 234, 0.3);
-  width: 20px;
-  height: 20px;
-  z-index: 2;
-  cursor: pointer;
-  border-radius: 50%;
-  border: none;
-  outline: none;
-  color: white;
-}
-
-.outerCont .CarouselCont .CarouselSection .nav-left {
-  left: -25px;
-}
-
-.outerCont .CarouselCont .CarouselSection .nav-right {
-  right: -25px;
 }
 
 .outerCont .SignUpCont {

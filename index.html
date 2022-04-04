@@ -4,6 +4,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <title>Sign Up Page</title>
   </head>
   <body>
@@ -101,46 +105,70 @@
       <div class="CarouselCont">
         <div class="CarouselHeader">Why work with Tulip?</div>
         <div class="CarouselSection">
-          <ol class="CarouselElements">
-            <li class="CarouselItem">
-              <div class="LogoSection"><img src="/svgs/exposure.svg" /></div>
-              <div class="TitleSection">Exposure</div>
-              <div class="CarouselDescriptionSection">
-                Attract millions of potential new patients through our referral
-                network.
+          <!-- <div class="navCont">
+            <div class="nav prev">
+              <img src="/svgs/arrowLeft.svg" alt="arrowLeft" />
+            </div>
+            <div class="nav next">
+              <img src="/svgs/arrowRight.svg" alt="arrowRight" />
+            </div>
+          </div> -->
+          <div class="nav">
+            <button class="prev">
+              <img src="/svgs/chevronLeft.svg" alt="Left button" />
+              <!-- prev -->
+              <!-- <span class="material-icons-outlined"> chevron_left </span> -->
+            </button>
+            <button class="next">
+              <img src="/svgs/chevronRight.svg" alt="Left button" />
+              <!-- next -->
+              <!-- <span class="material-icons-outlined"> chevron_right </span> -->
+            </button>
+          </div>
+          <div class="CarouselWrapper">
+            <div class="CarouselElements">
+              <div class="CarouselItem">
+                <div class="LogoSection"><img src="/svgs/exposure.svg" /></div>
+                <div class="TitleSection">Exposure</div>
+                <div class="CarouselDescriptionSection">
+                  Attract millions of potential new patients through our
+                  referral network.
+                </div>
               </div>
-            </li>
-            <li class="CarouselItem">
-              <div class="LogoSection"><img src="/svgs/ease.svg" /></div>
-              <div class="TitleSection">Ease</div>
-              <div class="CarouselDescriptionSection">
-                We refer patients to you and you treat them.
+              <div class="CarouselItem">
+                <div class="LogoSection"><img src="/svgs/ease.svg" /></div>
+                <div class="TitleSection">Ease</div>
+                <div class="CarouselDescriptionSection">
+                  We refer patients to you and you treat them.
+                </div>
               </div>
-            </li>
-            <li class="CarouselItem">
-              <div class="LogoSection"><img src="/svgs/flexibility.svg" /></div>
-              <div class="TitleSection">Flexibility</div>
-              <div class="CarouselDescriptionSection">
-                Create and adjust your schedule as needed. Work as much or as
-                little as you like!
+              <div class="CarouselItem">
+                <div class="LogoSection">
+                  <img src="/svgs/flexibility.svg" />
+                </div>
+                <div class="TitleSection">Flexibility</div>
+                <div class="CarouselDescriptionSection">
+                  Create and adjust your schedule as needed. Work as much or as
+                  little as you like!
+                </div>
               </div>
-            </li>
-            <li class="CarouselItem">
-              <div class="LogoSection"><img src="/svgs/exposure.svg" /></div>
-              <div class="TitleSection">Convenience</div>
-              <div class="CarouselDescriptionSection">
-                Work from the comforts of your own home.
+              <div class="CarouselItem">
+                <div class="LogoSection"><img src="/svgs/exposure.svg" /></div>
+                <div class="TitleSection">Convenience</div>
+                <div class="CarouselDescriptionSection">
+                  Work from the comforts of your own home.
+                </div>
               </div>
-            </li>
-            <li class="CarouselItem">
-              <div class="LogoSection"><img src="/svgs/Income.svg" /></div>
-              <div class="TitleSection">Extra Income</div>
-              <div class="CarouselDescriptionSection">
-                You decide if you want Tulip to be your side gig or your main
-                source of income.
+              <div class="CarouselItem">
+                <div class="LogoSection"><img src="/svgs/Income.svg" /></div>
+                <div class="TitleSection">Extra Income</div>
+                <div class="CarouselDescriptionSection">
+                  You decide if you want Tulip to be your side gig or your main
+                  source of income.
+                </div>
               </div>
-            </li>
-          </ol>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -466,4 +494,5 @@
 
   <script src="js/formValidation.js"></script>
   <script src="/js/characterCount.js"></script>
+  <script src="/js/carousel.js"></script>
 </html>
