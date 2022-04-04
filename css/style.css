@@ -396,8 +396,16 @@ body {
   margin-left: auto;
   margin-right: auto;
   height: 300px;
-  max-width: 1060px;
+  max-width: 1080px;
   position: relative;
+}
+
+@media (max-width: 1160px) {
+  .outerCont .CarouselCont .CarouselSection {
+    width: auto;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
 }
 
 .outerCont .CarouselCont .CarouselSection .nav {
@@ -439,15 +447,23 @@ body {
 .outerCont .CarouselCont .CarouselSection .CarouselWrapper {
   overflow: hidden;
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 60px;
+  margin-right: 60px;
   max-width: 1000px;
 }
 
+@media (max-width: 1160px) {
+  .outerCont .CarouselCont .CarouselSection .CarouselWrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 640px;
+  }
+}
+
 .outerCont .CarouselCont .CarouselSection .CarouselWrapper .CarouselElements {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -455,9 +471,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
   -webkit-transition: -webkit-transform 500ms;
   transition: -webkit-transform 500ms;
   transition: transform 500ms;
@@ -477,8 +494,9 @@ body {
   border: solid;
   border-color: #697184;
   border-width: 1px;
-  margin-left: 15px;
-  margin-right: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-right: 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
