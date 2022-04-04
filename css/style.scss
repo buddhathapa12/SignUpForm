@@ -430,11 +430,14 @@ body {
         .circle {
           border-radius: 20px;
           border: 1px solid #ffffff;
-          width: 10px;
-          height: 10px;
+          width: 15px;
+          height: 15px;
           margin: 5px;
+          color: #ffffff;
           cursor: pointer;
-          // display: none;
+        }
+        .selected {
+          background: #ffffff;
         }
       }
     }

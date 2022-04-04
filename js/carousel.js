@@ -35,7 +35,25 @@ document
   .querySelectorAll(".CarouselPagination li")
   .forEach((indicator, ind) => {
     indicator.addEventListener("click", () => {
-      elementWidth = document.querySelector(".CarouselItem").offsetWidth;
+      //   console.log(ind);
+      document
+        .querySelector(".CarouselPagination .selected")
+        .classList.remove("selected");
+      indicator.classList.add("selected");
+
+      var style =
+          document.querySelector(".CarouselItem").currentStyle ||
+          window.getComputedStyle(document.querySelector(".CarouselItem")),
+        width = document.querySelector(".CarouselItem").offsetWidth, // or use style.width
+        margin = parseFloat(style.marginLeft) + parseFloat(style.marginRight),
+        padding =
+          parseFloat(style.paddingLeft) + parseFloat(style.paddingRight),
+        border =
+          parseFloat(style.borderLeftWidth) +
+          parseFloat(style.borderRightWidth);
+
+      elementWidth = width + margin - padding + border;
+      console.log(elementWidth);
       carouselElements.style.transform =
         "translateX(" + ind * -elementWidth + "px)";
     });
