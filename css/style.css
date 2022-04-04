@@ -381,7 +381,7 @@ body {
 .outerCont .CarouselCont {
   padding: 40px;
   background-color: #363945;
-  height: 300px;
+  height: 350px;
 }
 
 .outerCont .CarouselCont .CarouselHeader {
@@ -395,7 +395,8 @@ body {
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
-  height: 200px;
+  height: 300px;
+  max-width: 1000px;
 }
 
 .outerCont .CarouselCont .CarouselSection .CarouselElements {
@@ -409,10 +410,15 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow-x: hidden;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .outerCont .CarouselCont .CarouselSection .CarouselElements .CarouselItem {
-  width: 200px;
+  min-width: 300px;
+  min-height: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -420,14 +426,60 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  border: solid;
+  border-color: #697184;
+  border-width: 1px;
+  margin-left: 15px;
+  margin-right: 15px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #ffffff;
+  -webkit-transition: opacity 0.5s, z-index 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, z-index 0.5s, -webkit-transform 0.5s;
+  transition: transform 0.5s, opacity 0.5s, z-index 0.5s;
+  transition: transform 0.5s, opacity 0.5s, z-index 0.5s, -webkit-transform 0.5s;
+}
+
+.outerCont .CarouselCont .CarouselSection .CarouselElements .CarouselItem .LogoSection {
+  padding-top: 20px;
+  stroke: #26937a;
+}
+
+.outerCont .CarouselCont .CarouselSection .CarouselElements .CarouselItem .TitleSection {
+  padding-top: 20px;
+  font-family: AxiFormaLight;
+  font-size: 30px;
 }
 
 .outerCont .CarouselCont .CarouselSection .CarouselElements .CarouselItem .CarouselDescriptionSection {
-  padding-top: 5px;
+  padding-top: 20px;
   text-align: center;
+  font-family: AxiFormaLight;
+  font-size: 20px;
+}
+
+.outerCont .CarouselCont .CarouselSection .nav {
+  position: relative;
+  top: 50%;
+  margin-top: -10px;
+  background-color: rgba(245, 234, 234, 0.3);
+  width: 20px;
+  height: 20px;
+  z-index: 2;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+.outerCont .CarouselCont .CarouselSection .nav-left {
+  left: -25px;
+}
+
+.outerCont .CarouselCont .CarouselSection .nav-right {
+  right: -25px;
 }
 
 .outerCont .SignUpCont {
