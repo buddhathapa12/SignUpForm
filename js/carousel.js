@@ -41,18 +41,13 @@ document
         .classList.remove("selected");
       indicator.classList.add("selected");
 
-      var style =
+      let style =
           document.querySelector(".CarouselItem").currentStyle ||
           window.getComputedStyle(document.querySelector(".CarouselItem")),
         width = document.querySelector(".CarouselItem").offsetWidth, // or use style.width
-        margin = parseFloat(style.marginLeft) + parseFloat(style.marginRight),
-        padding =
-          parseFloat(style.paddingLeft) + parseFloat(style.paddingRight),
-        border =
-          parseFloat(style.borderLeftWidth) +
-          parseFloat(style.borderRightWidth);
+        margin = parseFloat(style.marginLeft) + parseFloat(style.marginRight);
 
-      elementWidth = width + margin - padding + border;
+      elementWidth = width + margin;
       console.log(elementWidth);
       carouselElements.style.transform =
         "translateX(" + ind * -elementWidth + "px)";
