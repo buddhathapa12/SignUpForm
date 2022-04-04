@@ -456,7 +456,15 @@ body {
   .outerCont .CarouselCont .CarouselSection .CarouselWrapper {
     margin-left: auto;
     margin-right: auto;
-    width: 640px;
+    width: 660px;
+  }
+}
+
+@media (max-width: 910px) {
+  .outerCont .CarouselCont .CarouselSection .CarouselWrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
   }
 }
 
@@ -505,6 +513,20 @@ body {
   transition: opacity 0.5s, z-index 0.5s, -webkit-transform 0.5s;
   transition: transform 0.5s, opacity 0.5s, z-index 0.5s;
   transition: transform 0.5s, opacity 0.5s, z-index 0.5s, -webkit-transform 0.5s;
+}
+
+@media (max-width: 1160px) {
+  .outerCont .CarouselCont .CarouselSection .CarouselWrapper .CarouselElements .CarouselItem {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 910px) {
+  .outerCont .CarouselCont .CarouselSection .CarouselWrapper .CarouselElements .CarouselItem {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 
 .outerCont .CarouselCont .CarouselSection .CarouselWrapper .CarouselElements .CarouselItem .LogoSection {
