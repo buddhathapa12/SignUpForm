@@ -10,11 +10,7 @@ let index = 0;
 let carouselWidth = document.querySelector(".carouselElements").offsetWidth;
 window.addEventListener("resize", () => {
   index = 0;
-  console.log(carouselWidth);
-
-  console.log("screen" + window.innerWidth);
   carouselWidth = document.querySelector(".carouselElements").offsetWidth;
-  console.log("Hello" + carouselSection.offsetWidth);
 });
 
 next.addEventListener("click", () => {
@@ -22,7 +18,6 @@ next.addEventListener("click", () => {
   if (window.innerWidth <= 1160 && window.innerWidth > 910 && index < 2)
     index++;
   if (window.innerWidth <= 910 && index < 4) index++;
-  console.log(index);
   carouselElements.style.transform = `translateX(-${index * carouselWidth}px)`;
 });
 
@@ -34,6 +29,14 @@ prev.addEventListener("click", () => {
   carouselElements.style.transform = `translateX(-${index * carouselWidth}px)`;
 });
 
-window.addEventListener("resize", () => {
-  let carouselWidth = document.querySelector(".carouselElements").offsetWidth;
-});
+carouselPagination = document.querySelector(".CarouselPagination");
+
+document
+  .querySelectorAll(".CarouselPagination li")
+  .forEach((indicator, ind) => {
+    indicator.addEventListener("click", () => {
+      elementWidth = document.querySelector(".CarouselItem").offsetWidth;
+      carouselElements.style.transform =
+        "translateX(" + ind * -elementWidth + "px)";
+    });
+  });

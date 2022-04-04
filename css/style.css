@@ -547,6 +547,32 @@ body {
   font-size: 20px;
 }
 
+.outerCont .CarouselCont .CarouselSection .CarouselPagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.outerCont .CarouselCont .CarouselSection .CarouselPagination .circle {
+  border-radius: 20px;
+  border: 1px solid #ffffff;
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
 .outerCont .SignUpCont {
   margin-top: 40px;
   margin-left: auto;
