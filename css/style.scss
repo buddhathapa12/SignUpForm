@@ -326,6 +326,10 @@ body {
         margin-left: 60px;
         margin-right: 60px;
       }
+      @media (max-width: 585px) {
+        margin-left: 0px;
+        margin-right: 0px;
+      }
       .nav {
         top: 45%;
         width: 100%;

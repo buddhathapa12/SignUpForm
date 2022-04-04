@@ -408,6 +408,13 @@ body {
   }
 }
 
+@media (max-width: 585px) {
+  .outerCont .CarouselCont .CarouselSection {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
 .outerCont .CarouselCont .CarouselSection .nav {
   top: 45%;
   width: 100%;
