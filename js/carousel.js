@@ -11,9 +11,11 @@ const indicatorParents = document.querySelector(
 let index = 0;
 
 let carouselWidth = document.querySelector(".carouselElements").offsetWidth;
+CarouselPaginationIcon(carouselWidth);
 window.addEventListener("resize", () => {
   index = 0;
   carouselWidth = document.querySelector(".carouselElements").offsetWidth;
+  CarouselPaginationIcon(carouselWidth);
 });
 
 next.addEventListener("click", () => {
@@ -53,16 +55,39 @@ document
         .querySelector(".CarouselPagination .selected")
         .classList.remove("selected");
       indicator.classList.add("selected");
-
-      let style =
-          document.querySelector(".CarouselItem").currentStyle ||
-          window.getComputedStyle(document.querySelector(".CarouselItem")),
-        width = document.querySelector(".CarouselItem").offsetWidth, // or use style.width
-        margin = parseFloat(style.marginLeft) + parseFloat(style.marginRight);
-
-      elementWidth = width + margin;
-      console.log(elementWidth);
       carouselElements.style.transform =
-        "translateX(" + ind * -elementWidth + "px)";
+        "translateX(" + ind * -carouselWidth + "px)";
     });
   });
+
+function CarouselPaginationIcon(x) {
+  if (x >= 960) {
+    document
+      .querySelectorAll(".CarouselPagination li")
+      .forEach((indicator, ind) => {
+        if (ind > 1) {
+          indicator.style.display = "none";
+        } else {
+          indicator.style.display = "block";
+        }
+      });
+  }
+  if (x == 660) {
+    document
+      .querySelectorAll(".CarouselPagination li")
+      .forEach((indicator, ind) => {
+        if (ind > 2) {
+          indicator.style.display = "none";
+        } else {
+          indicator.style.display = "block";
+        }
+      });
+  }
+  if (x == 300) {
+    document
+      .querySelectorAll(".CarouselPagination li")
+      .forEach((indicator, ind) => {
+        indicator.style.display = "block";
+      });
+  }
+}

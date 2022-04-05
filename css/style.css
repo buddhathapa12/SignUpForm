@@ -711,6 +711,9 @@ body {
 }
 
 .outerCont .SignUpCont .SignUpFormCont .NameSection .FirstName .FirstNameInput {
+  padding: 10px;
+  font-family: AxiformaLight;
+  font-size: 20px;
   height: 45px;
   width: 250px;
 }
@@ -728,6 +731,9 @@ body {
 .outerCont .SignUpCont .SignUpFormCont .NameSection .LastName .LastNameInput {
   height: 45px;
   width: 250px;
+  padding: 10px;
+  font-family: AxiformaLight;
+  font-size: 20px;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .NameSection .SuffixSelector {
@@ -873,6 +879,9 @@ body {
 .outerCont .SignUpCont .SignUpFormCont .FormContactSection .PhoneNumber .PhoneNumberInput {
   height: 45px;
   width: 250px;
+  padding: 10px;
+  font-family: AxiformaLight;
+  font-size: 20px;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .FormContactSection .EmailAddress {
@@ -898,6 +907,9 @@ body {
 
 .outerCont .SignUpCont .SignUpFormCont .FormContactSection .EmailAddress .EmailInput {
   height: 45px;
+  padding: 10px;
+  font-family: AxiformaLight;
+  font-size: 20px;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .States {
@@ -919,6 +931,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .States .StateInputCont .StateInput {
@@ -932,6 +946,7 @@ body {
   background-repeat: no-repeat;
   padding-left: 10px;
   padding-right: 10px;
+  margin-bottom: 10px;
   margin-right: 20px;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -957,6 +972,7 @@ body {
 .outerCont .SignUpCont .SignUpFormCont .States .StateInputCont .AddAnotherState .PlusImage {
   width: 30px;
   cursor: pointer;
+  margin-bottom: 12px;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .States .StateInputCont .AddAnotherState .AddAnotherText {
@@ -1264,6 +1280,10 @@ body {
   padding-left: 10px;
 }
 
+.outerCont .SignUpCont .ResponseAfterSubmit {
+  display: none;
+}
+
 .outerCont .FooterCont {
   margin: 50px;
   margin-left: auto;
@@ -1339,6 +1359,12 @@ body {
 .error {
   color: #cf2808;
   text-align: right;
+}
+
+@media (max-width: 900px) {
+  .error {
+    text-align: left;
+  }
 }
 
 .LabelAndInputBoxMargin {

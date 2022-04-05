@@ -532,6 +532,9 @@ body {
           display: flex;
           flex-direction: column;
           .FirstNameInput {
+            padding: 10px;
+            font-family: AxiformaLight;
+            font-size: 20px;
             height: 45px;
             width: 250px;
           }
@@ -542,6 +545,9 @@ body {
           .LastNameInput {
             height: 45px;
             width: 250px;
+            padding: 10px;
+            font-family: AxiformaLight;
+            font-size: 20px;
           }
         }
         .SuffixSelector {
@@ -621,6 +627,9 @@ body {
           .PhoneNumberInput {
             height: 45px;
             width: 250px;
+            padding: 10px;
+            font-family: AxiformaLight;
+            font-size: 20px;
           }
         }
         .EmailAddress {
@@ -634,6 +643,9 @@ body {
           }
           .EmailInput {
             height: 45px;
+            padding: 10px;
+            font-family: AxiformaLight;
+            font-size: 20px;
             // background-image: url("../svgs/alert.svg");
             // background-color: rgba(0, 0, 0, 0);
             // background-repeat: no-repeat;
@@ -649,6 +661,7 @@ body {
         .StateInputCont {
           display: flex;
           flex-direction: row;
+          flex-wrap: wrap;
           .StateInput {
             height: 45px;
             width: 180px;
@@ -660,6 +673,7 @@ body {
             background-repeat: no-repeat;
             padding-left: 10px;
             padding-right: 10px;
+            margin-bottom: 10px;
             margin-right: 20px;
             appearance: none;
             @media (max-width: 800px) {
@@ -670,9 +684,9 @@ body {
             display: flex;
             flex-direction: row;
             .PlusImage {
-              // padding-left: 20px;
               width: 30px;
               cursor: pointer;
+              margin-bottom: 12px;
             }
             .AddAnotherText {
               padding-top: 10px;
@@ -864,6 +878,10 @@ body {
         }
       }
     }
+
+    .ResponseAfterSubmit {
+      display: none;
+    }
   }
 
   .FooterCont {
@@ -912,6 +930,9 @@ body {
 .error {
   color: #cf2808;
   text-align: right;
+  @media (max-width: 900px) {
+    text-align: left;
+  }
 }
 
 .LabelAndInputBoxMargin {

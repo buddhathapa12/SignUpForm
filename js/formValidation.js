@@ -251,5 +251,11 @@ addAnother.addEventListener("click", () => {
   document
     .querySelector(".StateInputCont")
     .insertBefore(cloneElem, addAnotherState);
-  addAnotherState.style.display = "none";
+  if (stateCount >= 5) {
+    addAnotherState.style.display = "none";
+  }
 });
+
+function OnSubmitForm() {
+  document.querySelector(".ResponseAfterSubmit").style.display = "block";
+}

@@ -34,7 +34,7 @@
           </a>
         </div>
         <div class="IntroTextCont">
-          <div class="IntroTitleText">Join tulip and Expand Your Practice</div>
+          <div class="IntroTitleText">Meet Tulip and Expand Your Practice</div>
           <div class="IntroDescription">
             Scroll to learn how Tulip will help you grow, we are accepting a
             limited number of new practices now.
@@ -195,10 +195,10 @@
         </div>
         <div class="SignUpFormCont">
           <form
-            action="#"
+            action="http://localhost:3000/api/signUp"
             name="signUpForm"
-            onsubmit="ValidationOnSubmit()"
             method="POST"
+            onsubmit="OnSubmitForm()"
           >
             <div class="NameSection">
               <div class="FirstName">
@@ -395,7 +395,14 @@
                 <option value="none" selected disabled hidden>
                   SELECT ...
                 </option>
-                <option value="aa">aa</option>
+                <option value="4 hours">4 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="8-10 hours">8-10 hours</option>
+                <option value="11-15 hours">11-15 hours</option>
+                <option value="15-20 hours">15-20 hours</option>
+                <option value="21-25 hours">21-25 hours</option>
+                <option value="26-30 hours">26-30 hours</option>
+                <option value="More than 30 hours">More than 30 hours</option>
               </select>
               <div class="error" id="hourReferredError"></div>
             </div>
@@ -479,6 +486,13 @@
               />
             </div>
           </form>
+        </div>
+        <div class="ResponseAfterSubmit">
+          Thank you for considering Tulip! Please check your email, we will
+          respond within 24 hours. If you don't see an email, please check your
+          junk folder and search for “meettulip.com”
+          <br />
+          We look forward to speaking with you soon!
         </div>
       </div>
 
