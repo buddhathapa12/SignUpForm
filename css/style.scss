@@ -591,9 +591,15 @@ body {
           font-family: AxiformaLightItalic;
         }
         #credentialsCount {
-          float: right;
+          // float: right;
           padding: 0.1rem 0 0 0;
           font-size: 0.875rem;
+          display: flex;
+          flex-direction: row;
+          justify-content: end;
+          @media (max-width: 800px) {
+            width: 90vw;
+          }
         }
       }
 
@@ -668,6 +674,7 @@ body {
           height: 90px;
           font-family: AxiformaLight;
           font-size: 20px;
+          max-width: 800px;
           @media (max-width: 800px) {
             width: 90vw;
             font-size: 15px;
@@ -676,6 +683,16 @@ body {
         ::placeholder {
           opacity: 0.5;
           font-family: AxiformaLightItalic;
+        }
+        #areaOfFocusInputCount {
+          padding: 0.1rem 0 0 0;
+          font-size: 0.875rem;
+          display: flex;
+          flex-direction: row;
+          justify-content: end;
+          @media (max-width: 800px) {
+            width: 90vw;
+          }
         }
       }
 
@@ -763,6 +780,7 @@ body {
         .FeedbackToTulipInput {
           padding: 10px;
           height: 90px;
+          max-width: 800px;
           font-family: AxiformaLight;
           font-size: 20px;
           @media (max-width: 900px) {
@@ -773,6 +791,16 @@ body {
         ::placeholder {
           opacity: 0.5;
           font-family: AxiformaLightItalic;
+        }
+        #FeedbackToTulipInputCount {
+          padding: 0.1rem 0 0 0;
+          font-size: 0.875rem;
+          display: flex;
+          flex-direction: row;
+          justify-content: end;
+          @media (max-width: 800px) {
+            width: 90vw;
+          }
         }
       }
 

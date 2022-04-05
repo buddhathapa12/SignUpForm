@@ -814,9 +814,24 @@ body {
 }
 
 .outerCont .SignUpCont .SignUpFormCont .CredentialsSection #credentialsCount {
-  float: right;
   padding: 0.1rem 0 0 0;
   font-size: 0.875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+@media (max-width: 800px) {
+  .outerCont .SignUpCont .SignUpFormCont .CredentialsSection #credentialsCount {
+    width: 90vw;
+  }
 }
 
 .outerCont .SignUpCont .SignUpFormCont .FormContactSection {
@@ -937,6 +952,7 @@ body {
   height: 90px;
   font-family: AxiformaLight;
   font-size: 20px;
+  max-width: 800px;
 }
 
 @media (max-width: 800px) {
@@ -964,6 +980,27 @@ body {
 .outerCont .SignUpCont .SignUpFormCont .AreaOfFocusCont ::placeholder {
   opacity: 0.5;
   font-family: AxiformaLightItalic;
+}
+
+.outerCont .SignUpCont .SignUpFormCont .AreaOfFocusCont #areaOfFocusInputCount {
+  padding: 0.1rem 0 0 0;
+  font-size: 0.875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+@media (max-width: 800px) {
+  .outerCont .SignUpCont .SignUpFormCont .AreaOfFocusCont #areaOfFocusInputCount {
+    width: 90vw;
+  }
 }
 
 .outerCont .SignUpCont .SignUpFormCont .HoursPatientReferredCont {
@@ -1093,6 +1130,7 @@ body {
 .outerCont .SignUpCont .SignUpFormCont .FeedbackToTulip .FeedbackToTulipInput {
   padding: 10px;
   height: 90px;
+  max-width: 800px;
   font-family: AxiformaLight;
   font-size: 20px;
 }
@@ -1122,6 +1160,27 @@ body {
 .outerCont .SignUpCont .SignUpFormCont .FeedbackToTulip ::placeholder {
   opacity: 0.5;
   font-family: AxiformaLightItalic;
+}
+
+.outerCont .SignUpCont .SignUpFormCont .FeedbackToTulip #FeedbackToTulipInputCount {
+  padding: 0.1rem 0 0 0;
+  font-size: 0.875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+@media (max-width: 800px) {
+  .outerCont .SignUpCont .SignUpFormCont .FeedbackToTulip #FeedbackToTulipInputCount {
+    width: 90vw;
+  }
 }
 
 .outerCont .SignUpCont .SignUpFormCont .SubmitCont {
