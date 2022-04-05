@@ -523,7 +523,7 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         @media (max-width: 900px) {
           flex-direction: column;
           // max-width: 800px;
@@ -532,7 +532,7 @@ body {
           display: flex;
           flex-direction: column;
           .FirstNameInput {
-            height: 40px;
+            height: 45px;
             width: 250px;
           }
         }
@@ -540,7 +540,7 @@ body {
           display: flex;
           flex-direction: column;
           .LastNameInput {
-            height: 40px;
+            height: 45px;
             width: 250px;
           }
         }
@@ -548,12 +548,12 @@ body {
           display: flex;
           flex-direction: column;
           .SuffixInput {
-            height: 40px;
+            height: 45px;
             width: 180px;
             font-family: AxiformaLightItalic;
             font-size: 15px;
             background-image: url(/svgs/triangle-down.svg);
-            background-position: right; //140px;;
+            background-position: 150px; //140px;;
             background-size: 15px;
             background-repeat: no-repeat;
             padding-left: 10px;
@@ -619,7 +619,7 @@ body {
           display: flex;
           flex-direction: column;
           .PhoneNumberInput {
-            height: 40px;
+            height: 45px;
             width: 250px;
           }
         }
@@ -633,11 +633,11 @@ body {
             width: 90vw;
           }
           .EmailInput {
-            height: 40px;
+            height: 45px;
             // background-image: url("../svgs/alert.svg");
             // background-color: rgba(0, 0, 0, 0);
             // background-repeat: no-repeat;
-            // background-position: right;
+            // background-position: 150px;
           }
         }
       }
@@ -650,12 +650,12 @@ body {
           display: flex;
           flex-direction: row;
           .StateInput {
-            height: 40px;
-            width: 200px;
+            height: 45px;
+            width: 180px;
             font-family: AxiformaLightItalic;
             font-size: 15px;
             background-image: url(/svgs/triangle-down.svg);
-            background-position: right; //140px;;
+            background-position: 150px; //140px;;
             background-size: 15px;
             background-repeat: no-repeat;
             padding-left: 10px;
@@ -724,12 +724,12 @@ body {
         flex-direction: column;
         margin-bottom: 20px;
         .HourReferredInput {
-          height: 40px;
-          width: 400px;
+          height: 45px;
+          width: 180px;
           font-family: AxiformaLightItalic;
           font-size: 15px;
           background-image: url(/svgs/triangle-down.svg);
-          background-position: right; //140px;;
+          background-position: 150px; //140px;;
           background-size: 15px;
           background-repeat: no-repeat;
           padding-left: 10px;
@@ -750,12 +750,12 @@ body {
         flex-direction: column;
         margin-bottom: 20px;
         .TypicalResponseTimeInput {
-          height: 40px;
-          width: 400px;
+          height: 45px;
+          width: 300px;
           font-family: AxiformaLightItalic;
           font-size: 15px;
           background-image: url(/svgs/triangle-down.svg);
-          background-position: right; //140px;;
+          background-position: 95%; //140px;;
           background-size: 15px;
           background-repeat: no-repeat;
           padding-left: 10px;
@@ -776,12 +776,12 @@ body {
         flex-direction: column;
         margin-bottom: 20px;
         .WaitTimeForPatientInput {
-          height: 40px;
-          width: 400px;
+          height: 45px;
+          width: 300px;
           font-family: AxiformaLightItalic;
           font-size: 15px;
           background-image: url(/svgs/triangle-down.svg);
-          background-position: right; //140px;;
+          background-position: 95%; //140px;;
           background-size: 15px;
           background-repeat: no-repeat;
           padding-left: 10px;

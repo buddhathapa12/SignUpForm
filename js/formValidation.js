@@ -100,7 +100,7 @@ function ValidateEmailAddress() {
     printError("emailAddressError", "Please enter your Email Address");
 
     emailCont.style.backgroundImage = "url('../svgs/alert.svg')";
-    emailCont.style.backgroundPosition = "right";
+    emailCont.style.backgroundPosition = "98%";
     emailCont.style.backgroundRepeat = "no-repeat";
     emailCont.style.color = "red";
   } else {
@@ -110,7 +110,7 @@ function ValidateEmailAddress() {
     if (validRegex.test(emailAddress) === false) {
       printError("emailAddressError", "Please enter a valid Email address");
       emailCont.style.backgroundImage = "url('../svgs/alert.svg')";
-      emailCont.style.backgroundPosition = "right";
+      emailCont.style.backgroundPosition = "98%";
       emailCont.style.backgroundRepeat = "no-repeat";
     } else {
       printError("emailAddressError", "");
