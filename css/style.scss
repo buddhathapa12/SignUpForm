@@ -581,8 +581,10 @@ body {
           height: 90px;
           font-family: AxiformaLight;
           font-size: 20px;
+          max-width: 800px;
           @media (max-width: 800px) {
-            width: 90vw;
+            // width: 90vw;
+            max-width: 90vw;
             font-size: 15px;
           }
         }
@@ -676,8 +678,7 @@ body {
           font-size: 20px;
           max-width: 800px;
           @media (max-width: 800px) {
-            width: 90vw;
-            font-size: 15px;
+            max-width: 90vw;
           }
         }
         ::placeholder {
@@ -691,7 +692,7 @@ body {
           flex-direction: row;
           justify-content: end;
           @media (max-width: 800px) {
-            width: 90vw;
+            max-width: 90vw;
           }
         }
       }
@@ -799,7 +800,7 @@ body {
           flex-direction: row;
           justify-content: end;
           @media (max-width: 800px) {
-            width: 90vw;
+            max-width: 90vw;
           }
         }
       }

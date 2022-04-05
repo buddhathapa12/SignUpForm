@@ -4,6 +4,9 @@ const next = document.querySelector(".next");
 const carouselElements = document.querySelector(".CarouselElements");
 
 const carouselSection = document.querySelector(".CarouselSection");
+const indicatorParents = document.querySelector(
+  ".CarouselSection .CarouselPagination"
+);
 
 let index = 0;
 
@@ -19,12 +22,22 @@ next.addEventListener("click", () => {
     index++;
   if (window.innerWidth <= 910 && index < 4) index++;
   carouselElements.style.transform = `translateX(-${index * carouselWidth}px)`;
+  document
+    .querySelector(".CarouselPagination .selected")
+    .classList.remove("selected");
+  indicatorParents.children[index].classList.add("selected");
 });
 
 prev.addEventListener("click", () => {
   if (index > 0) {
     index--;
   }
+
+  document
+    .querySelector(".CarouselPagination .selected")
+    .classList.remove("selected");
+  indicatorParents.children[index].classList.add("selected");
+
   next.style.display = "block";
   carouselElements.style.transform = `translateX(-${index * carouselWidth}px)`;
 });
