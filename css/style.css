@@ -1248,8 +1248,8 @@ body {
   width: 120px;
   height: 30px;
   padding: 10px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#0cebeb), to(#29fec6));
-  background-image: linear-gradient(to right, #0cebeb, #29fec6);
+  background-image: -webkit-gradient(linear, left top, right top, from(#0cebeb), color-stop(#20e3b2), to(#29fec6));
+  background-image: linear-gradient(to right, #0cebeb, #20e3b2, #29fec6);
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1309,8 +1309,8 @@ body {
   font-family: AxiFormaBold;
   border: none;
   cursor: pointer;
-  background-image: -webkit-gradient(linear, left top, right top, from(#0cebeb), to(#29fec6));
-  background-image: linear-gradient(to right, #0cebeb, #29fec6);
+  background-image: -webkit-gradient(linear, left top, right top, from(#0cebeb), color-stop(#20e3b2), to(#29fec6));
+  background-image: linear-gradient(to right, #0cebeb, #20e3b2, #29fec6);
   color: #000000;
   text-decoration: none;
 }
@@ -1324,8 +1324,8 @@ body {
 
 .outerCont .FooterCont .FooterHorizontalLine {
   height: 4px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#0cebeb), to(#29fec6));
-  background-image: linear-gradient(to right, #0cebeb, #29fec6);
+  background-image: -webkit-gradient(linear, left top, right top, from(#0cebeb), color-stop(#20e3b2), to(#29fec6));
+  background-image: linear-gradient(to right, #0cebeb, #20e3b2, #29fec6);
 }
 
 @media (max-width: 900px) {
