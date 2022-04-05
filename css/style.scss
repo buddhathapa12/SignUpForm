@@ -646,22 +646,44 @@ body {
         display: flex;
         flex-direction: column;
         margin-bottom: 20px;
-        .StateInput {
-          height: 40px;
-          width: 200px;
-          font-family: AxiformaLightItalic;
-          font-size: 15px;
-          background-image: url(/svgs/triangle-down.svg);
-          background-position: right; //140px;;
-          background-size: 15px;
-          background-repeat: no-repeat;
-          padding-left: 10px;
-          padding-right: 10px;
-          appearance: none;
-          @media (max-width: 800px) {
+        .StateInputCont {
+          display: flex;
+          flex-direction: row;
+          .StateInput {
+            height: 40px;
+            width: 200px;
+            font-family: AxiformaLightItalic;
             font-size: 15px;
+            background-image: url(/svgs/triangle-down.svg);
+            background-position: right; //140px;;
+            background-size: 15px;
+            background-repeat: no-repeat;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-right: 20px;
+            appearance: none;
+            @media (max-width: 800px) {
+              font-size: 15px;
+            }
+          }
+          .AddAnotherState {
+            display: flex;
+            flex-direction: row;
+            .PlusImage {
+              // padding-left: 20px;
+              width: 30px;
+              cursor: pointer;
+            }
+            .AddAnotherText {
+              padding-top: 10px;
+              width: 120px;
+              justify-content: center;
+              text-align: center;
+              vertical-align: middle;
+            }
           }
         }
+
         .error {
           text-align: start;
         }

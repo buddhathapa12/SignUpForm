@@ -911,7 +911,17 @@ body {
   margin-bottom: 20px;
 }
 
-.outerCont .SignUpCont .SignUpFormCont .States .StateInput {
+.outerCont .SignUpCont .SignUpFormCont .States .StateInputCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.outerCont .SignUpCont .SignUpFormCont .States .StateInputCont .StateInput {
   height: 40px;
   width: 200px;
   font-family: AxiformaLightItalic;
@@ -922,15 +932,41 @@ body {
   background-repeat: no-repeat;
   padding-left: 10px;
   padding-right: 10px;
+  margin-right: 20px;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
 }
 
 @media (max-width: 800px) {
-  .outerCont .SignUpCont .SignUpFormCont .States .StateInput {
+  .outerCont .SignUpCont .SignUpFormCont .States .StateInputCont .StateInput {
     font-size: 15px;
   }
+}
+
+.outerCont .SignUpCont .SignUpFormCont .States .StateInputCont .AddAnotherState {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.outerCont .SignUpCont .SignUpFormCont .States .StateInputCont .AddAnotherState .PlusImage {
+  width: 30px;
+  cursor: pointer;
+}
+
+.outerCont .SignUpCont .SignUpFormCont .States .StateInputCont .AddAnotherState .AddAnotherText {
+  padding-top: 10px;
+  width: 120px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .States .error {

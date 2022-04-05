@@ -237,3 +237,19 @@ function ValidationOnSubmit() {
     return true;
   }
 }
+
+let stateCount = 1;
+
+const addAnother = document.querySelector(".PlusImage");
+const addAnotherState = document.querySelector(".AddAnotherState");
+addAnother.addEventListener("click", () => {
+  const state = document.querySelector("#state");
+  const cloneElem = state.cloneNode(true);
+  stateCount++;
+  cloneElem.id = "state" + stateCount;
+  cloneElem.name = "state" + stateCount;
+  document
+    .querySelector(".StateInputCont")
+    .insertBefore(cloneElem, addAnotherState);
+  addAnotherState.style.display = "none";
+});
