@@ -534,7 +534,7 @@ body {
           .FirstNameInput {
             padding: 10px;
             font-family: AxiformaLight;
-            font-size: 20px;
+            font-size: 15px;
             height: 45px;
             width: 250px;
           }
@@ -547,7 +547,7 @@ body {
             width: 250px;
             padding: 10px;
             font-family: AxiformaLight;
-            font-size: 20px;
+            font-size: 15px;
           }
         }
         .SuffixSelector {
@@ -586,7 +586,7 @@ body {
           padding: 10px;
           height: 90px;
           font-family: AxiformaLight;
-          font-size: 20px;
+          font-size: 15px;
           max-width: 800px;
           @media (max-width: 800px) {
             // width: 90vw;
@@ -629,7 +629,7 @@ body {
             width: 250px;
             padding: 10px;
             font-family: AxiformaLight;
-            font-size: 20px;
+            font-size: 15px;
           }
         }
         .EmailAddress {
@@ -645,11 +645,7 @@ body {
             height: 45px;
             padding: 10px;
             font-family: AxiformaLight;
-            font-size: 20px;
-            // background-image: url("../svgs/alert.svg");
-            // background-color: rgba(0, 0, 0, 0);
-            // background-repeat: no-repeat;
-            // background-position: 150px;
+            font-size: 15px;
           }
         }
       }
@@ -711,7 +707,7 @@ body {
           padding: 10px;
           height: 90px;
           font-family: AxiformaLight;
-          font-size: 20px;
+          font-size: 15px;
           max-width: 800px;
           @media (max-width: 800px) {
             max-width: 90vw;
@@ -819,7 +815,7 @@ body {
           height: 90px;
           max-width: 800px;
           font-family: AxiformaLight;
-          font-size: 20px;
+          font-size: 15px;
           @media (max-width: 900px) {
             width: 90vw;
             font-size: 15px;
@@ -881,6 +877,35 @@ body {
 
     .ResponseAfterSubmit {
       display: none;
+      max-width: 800px;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      font-size: 20px;
+      font-family: AxiFormaLight;
+    }
+
+    .BackToHomeCont {
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      height: 50px;
+      max-width: 800px;
+      position: relative;
+      display: none;
+      .BackToHome {
+        position: absolute;
+        padding: 15px;
+        left: 45%;
+        width: 130px;
+        font-family: AxiFormaBold;
+        border: none;
+        cursor: pointer;
+        background-image: linear-gradient(to right, #0cebeb, #29fec6);
+        color: #000000;
+        text-decoration: none;
+      }
     }
   }
 
@@ -947,6 +972,10 @@ body {
 .SubmitCont:hover {
   transform: scale(0.8);
   transition-duration: 200ms;
+}
+
+.BackToHome:hover {
+  transform: scale(0.9);
 }
 
 .TulipLogo path {

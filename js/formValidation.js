@@ -258,4 +258,5 @@ addAnother.addEventListener("click", () => {
 
 function OnSubmitForm() {
   document.querySelector(".ResponseAfterSubmit").style.display = "block";
+  document.querySelector(".BackToHomeCont").style.display = "block";
 }

@@ -713,7 +713,7 @@ body {
 .outerCont .SignUpCont .SignUpFormCont .NameSection .FirstName .FirstNameInput {
   padding: 10px;
   font-family: AxiformaLight;
-  font-size: 20px;
+  font-size: 15px;
   height: 45px;
   width: 250px;
 }
@@ -733,7 +733,7 @@ body {
   width: 250px;
   padding: 10px;
   font-family: AxiformaLight;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .NameSection .SuffixSelector {
@@ -789,7 +789,7 @@ body {
   padding: 10px;
   height: 90px;
   font-family: AxiformaLight;
-  font-size: 20px;
+  font-size: 15px;
   max-width: 800px;
 }
 
@@ -881,7 +881,7 @@ body {
   width: 250px;
   padding: 10px;
   font-family: AxiformaLight;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .FormContactSection .EmailAddress {
@@ -909,7 +909,7 @@ body {
   height: 45px;
   padding: 10px;
   font-family: AxiformaLight;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .outerCont .SignUpCont .SignUpFormCont .States {
@@ -1004,7 +1004,7 @@ body {
   padding: 10px;
   height: 90px;
   font-family: AxiformaLight;
-  font-size: 20px;
+  font-size: 15px;
   max-width: 800px;
 }
 
@@ -1184,7 +1184,7 @@ body {
   height: 90px;
   max-width: 800px;
   font-family: AxiformaLight;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 @media (max-width: 900px) {
@@ -1282,6 +1282,37 @@ body {
 
 .outerCont .SignUpCont .ResponseAfterSubmit {
   display: none;
+  max-width: 800px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 20px;
+  font-family: AxiFormaLight;
+}
+
+.outerCont .SignUpCont .BackToHomeCont {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  max-width: 800px;
+  position: relative;
+  display: none;
+}
+
+.outerCont .SignUpCont .BackToHomeCont .BackToHome {
+  position: absolute;
+  padding: 15px;
+  left: 45%;
+  width: 130px;
+  font-family: AxiFormaBold;
+  border: none;
+  cursor: pointer;
+  background-image: -webkit-gradient(linear, left top, right top, from(#0cebeb), to(#29fec6));
+  background-image: linear-gradient(to right, #0cebeb, #29fec6);
+  color: #000000;
+  text-decoration: none;
 }
 
 .outerCont .FooterCont {
@@ -1383,6 +1414,11 @@ body {
           transform: scale(0.8);
   -webkit-transition-duration: 200ms;
           transition-duration: 200ms;
+}
+
+.BackToHome:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .TulipLogo path {
