@@ -1361,6 +1361,7 @@ body {
       -ms-flex: 1;
           flex: 1;
   color: #8f99ad;
+  font-family: AxiFormaLight;
 }
 
 @media (max-width: 900px) {
@@ -1384,7 +1385,8 @@ body {
 }
 
 .outerCont .FooterCont .Footer .FooterContact .FooterColor {
-  color: #585b65;
+  color: #000000;
+  font-family: AxiFormaLight;
 }
 
 .error {

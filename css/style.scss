@@ -933,6 +933,7 @@ body {
       .Copyright {
         flex: 1;
         color: #8f99ad;
+        font-family: AxiFormaLight;
         @media (max-width: 900px) {
           text-align: center;
           padding-bottom: 20px;
@@ -945,7 +946,9 @@ body {
           text-align: center;
         }
         .FooterColor {
-          color: #585b65;
+          // color: #585b65;
+          color: #000000;
+          font-family: AxiFormaLight;
         }
       }
     }
