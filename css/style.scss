@@ -301,6 +301,12 @@ body {
         }
       }
     }
+    .MiddleSection {
+      @media (max-width: 900px) {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
   }
 
   .CarouselCont {

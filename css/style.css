@@ -378,6 +378,18 @@ body {
   }
 }
 
+@media (max-width: 900px) {
+  .outerCont .DetailInfoCont .MiddleSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
 .outerCont .CarouselCont {
   padding: 40px;
   background-color: #363945;
