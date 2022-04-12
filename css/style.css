@@ -174,9 +174,22 @@ body {
   text-decoration: none;
 }
 
+@media (max-width: 412px) {
+  .outerCont .introSection .ContactSection .Contact {
+    border: none;
+  }
+}
+
 .outerCont .introSection .ContactSection .Contact .mailLogo {
   width: 25px;
   fill: #8dbaac;
+}
+
+@media (max-width: 412px) {
+  .outerCont .introSection .ContactSection .Contact .mailLogo {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
 }
 
 .outerCont .introSection .ContactSection .Contact .Content {
@@ -187,6 +200,12 @@ body {
   font-weight: 100;
   font-family: AxiFormaBook;
   color: #000000;
+}
+
+@media (max-width: 412px) {
+  .outerCont .introSection .ContactSection .Contact .Content {
+    display: none;
+  }
 }
 
 .outerCont .introSection .IntroTextCont {

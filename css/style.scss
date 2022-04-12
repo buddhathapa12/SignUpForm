@@ -158,9 +158,15 @@ body {
         padding-top: 5px;
         padding-bottom: 5px;
         text-decoration: none;
+        @media (max-width: 412px) {
+          border: none;
+        }
         .mailLogo {
           width: 25px;
           fill: #8dbaac;
+          @media (max-width: 412px) {
+            transform: scale(1.5);
+          }
         }
         .Content {
           padding-left: 15px;
@@ -170,6 +176,9 @@ body {
           font-weight: 100;
           font-family: AxiFormaBook;
           color: #000000;
+          @media (max-width: 412px) {
+            display: none;
+          }
         }
       }
     }
