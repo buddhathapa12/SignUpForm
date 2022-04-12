@@ -201,6 +201,12 @@ body {
           align-items: center;
 }
 
+@media (max-width: 368px) {
+  .outerCont .introSection .IntroTextCont {
+    top: 40%;
+  }
+}
+
 .outerCont .introSection .IntroTextCont .IntroTitleText {
   text-align: center;
   font-size: 45px;
